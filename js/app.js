@@ -59,6 +59,35 @@ function applyI18n(lang){
   document.dispatchEvent(new CustomEvent('i18n:applied', { detail: { lang } }));
 }
 
+/* ---------- عرض مكتبة الأفاعي الغير معروفة ---------- */
+function renderUnknown(lang){
+  const grid = document.getElementById('unknown-grid');
+  if (!grid || typeof unknownData === 'undefined') return;
+  const dict = I18N[lang] || I18N[I18N_DEFAULT_LANG];
+  const g = dict.guide;
+
+  grid.innerHTML = unknownData.map(sp => {
+    const photo = sp.img
+      ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}">`
+      : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
+    return `
+      <div class="species-card reveal in" data-type="safe">
+        <div class="species-photo">${photo}<span class="species-badge badge-safe">${escapeHtml(g.badgeSafe)}</span></div>
+        <div class="species-body">
+          <div class="species-top">
+            <div><h3>${escapeHtml(sp.name[lang])}</h3><span class="species-latin">${escapeHtml(sp.latin)}</span></div>
+          </div>
+          <p>${escapeHtml(sp.desc[lang])}</p>
+          <div class="species-meta">
+            <span>${escapeHtml(g.lengthLabel)}: <strong>${escapeHtml(sp.length[lang])}</strong></span>
+            <span>${escapeHtml(g.dietLabel)}: <strong>${escapeHtml(sp.diet[lang])}</strong></span>
+            <span>${escapeHtml(g.rangeLabel)}: <strong>${escapeHtml(sp.range[lang])}</strong></span>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
 /* ---------- عرض دليل الأفاعي ---------- */
 function renderSpecies(lang){
   const grid = document.getElementById('species-grid');
@@ -291,6 +320,7 @@ function renderArticles(lang){
 /* ---------- إعادة رسم كل المحتوى الديناميكي للصفحة الحالية ---------- */
 function renderPageContent(lang){
   renderSpecies(lang);
+  renderUnknown(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');
   renderSpeciesArticle(lang, 'safe-article', 'safe', 'articleSafe');
   renderAdventures(lang);

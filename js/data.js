@@ -220,7 +220,9 @@ const speciesData = [
       en:"A long, legless reptile always mistaken for a snake, but actually a true lizard (told apart by its movable eyelids and visible ear opening). Completely non-venomous and calm-tempered, living among grasses and fields." },
     length:{ ar:"حتى 140 سم", he:"עד 140 ס״מ", en:"Up to 140 cm" },
     diet:{ ar:"الحشرات والقواقع والقوارض الصغيرة", he:"חרקים, חלזונות ומכרסמים קטנים", en:"Insects, snails and small rodents" },
-    range:{ ar:"معظم أنحاء البلاد", he:"רוב חלקי הארץ", en:"Most of the country" } }
+    range:{ ar:"معظم أنحاء البلاد", he:"רוב חלקי הארץ", en:"Most of the country" } },
+
+
 
 ];
 
@@ -286,7 +288,8 @@ const photosData = [
   { type:"safe", src:"images/xerotyphlops-vermicularis.jpg", latin:"Xerotyphlops vermicularis",
     caption:{ ar:"الحية دقيقة الرأس", he:"נחשיל מצוי", en:"Blind Worm Snake" } },
   { type:"safe", src:"images/pseudopus-apodus.jpg", latin:"Pseudopus apodus",
-    caption:{ ar:"السحلية الزجاجية (أبو قرع)", he:"קמטן", en:"European Glass Lizard" } }
+    caption:{ ar:"السحلية الزجاجية (أبو قرع)", he:"קמטן", en:"European Glass Lizard" } },
+
 ];
 
 /* ---------- 4) مكتبة الفيديوهات: أضف فيديو جديد هنا ----------

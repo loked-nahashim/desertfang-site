@@ -56,6 +56,7 @@ const I18N = {
       lib2Title: "مكتبة الصور", lib2Desc: "لقطات ميدانية حصرية للأنواع التي وثّقتها، من قرب وفي بيئتها الطبيعية.",
       lib3Title: "مكتبة الفيديوهات", lib3Desc: "مقاطع من الميدان: طرق التعرف، أساليب التعامل الآمن، ولحظات المطاردة والتوثيق.",
       lib4Title: "مكتبة المقالات", lib4Desc: "مقالات معمّقة عن سلوك الأفاعي، الإسعافات الأولية، والسلامة أثناء الصيد الميداني.",
+      lib5Title: "مكتبة الأفاعي الغير معروفة في إسرائيل", lib5Desc: "أنواع نادرة وغير مألوفة من أفاعي إسرائيل في خطر الانقراض.", libSoon: "قريبًا",
       libGo: "افتح المكتبة ←",
       bigVideosTitle: "مكتبة الفيديوهات",
       bigChannelTitle: "قناتي على اليوتيوب",
@@ -81,6 +82,13 @@ const I18N = {
       noticeStrong: "ملاحظة على الدقة العلمية:",
       noticeText: "هذه البطاقات مبنية على معلومات عامة موثقة عن أنواع أفاعي إسرائيل، وسأقوم بتحديثها تباعًا بصوري وملاحظاتي الميدانية الخاصة. إن كنت خبيرًا أو صيادًا آخر ولاحظت تفصيلًا يحتاج تصحيحًا، تواصل معي.",
       photoSoon: "صورة ميدانية قريبًا"
+    },
+    unknown: {
+      breadcrumb: "مكتبة الأفاعي الغير معروفة",
+      eyebrow: "19 نوعًا غير سام",
+      title: "مكتبة الأفاعي الغير معروفة في إسرائيل",
+      lead: "مجموعة من الأفاعي غير المعروفة وغير السامة الموثّقة في إسرائيل.",
+      noticeText: "هذه الأنواع غير سامة وغير خطرة على الإنسان، وبعضها خلفي الأنياب بسمّ خفيف جدًا."
     },
 
     adventures: {
@@ -433,6 +441,7 @@ const I18N = {
       lib2Title: "גלריית תמונות", lib2Desc: "תמונות שטח בלעדיות של המינים שתיעדתי, מקרוב ובבית הגידול הטבעי שלהם.",
       lib3Title: "גלריית וידאו", lib3Desc: "קטעים מהשטח: דרכי זיהוי, שיטות התמודדות בטוחות, ורגעי מעקב ותיעוד.",
       lib4Title: "ספריית מאמרים", lib4Desc: "מאמרים מעמיקים על התנהגות נחשים, עזרה ראשונה, ובטיחות בזמן ציד שטח.",
+      lib5Title: "ספריית הנחשים הלא-מוכרים בישראל", lib5Desc: "מינים נדירים ולא מוכרים של נחשי ישראל בסכנת הכחדה.", libSoon: "בקרוב",
       libGo: "פתח את הספרייה ←",
       bigVideosTitle: "ספריית הווידאו",
       bigChannelTitle: "ערוץ היוטיוב שלי",
@@ -458,6 +467,13 @@ const I18N = {
       noticeStrong: "הערה לגבי הדיוק המדעי:",
       noticeText: "הכרטיסים הללו מבוססים על מידע כללי ומתועד על מיני נחשי ישראל, ואעדכן אותם בהדרגה עם תמונות והערות השטח שלי. אם אתם מומחים או לוכד אחר ושמתם לב לפרט הדורש תיקון, צרו קשר.",
       photoSoon: "תמונת שטח בקרוב"
+    },
+    unknown: {
+      breadcrumb: "ספריית הנחשים הלא-מוכרים",
+      eyebrow: "19 מינים לא ארסיים",
+      title: "ספריית הנחשים הלא-מוכרים בישראל",
+      lead: "אוסף של נחשים לא-מוכרים ולא ארסיים שתועדו בישראל.",
+      noticeText: "מינים אלה אינם ארסיים ואינם מסוכנים לאדם, וחלקם בעלי ארס אחורי חלש מאוד."
     },
 
     adventures: {
@@ -810,6 +826,7 @@ const I18N = {
       lib2Title: "Photo Gallery", lib2Desc: "Exclusive field shots of the species I've documented, up close in their natural habitat.",
       lib3Title: "Video Gallery", lib3Desc: "Clips from the field: identification methods, safe handling techniques, and moments of tracking and documentation.",
       lib4Title: "Article Library", lib4Desc: "In-depth articles on snake behavior, first aid, and safety during field hunting.",
+      lib5Title: "Library of Unknown Snakes in Israel", lib5Desc: "Rare and unfamiliar snakes of Israel that are in danger of extinction.", libSoon: "Coming soon",
       libGo: "Open the library →",
       bigVideosTitle: "Video Library",
       bigChannelTitle: "My YouTube Channel",
@@ -835,6 +852,13 @@ const I18N = {
       noticeStrong: "A note on scientific accuracy:",
       noticeText: "These cards are based on general, well-documented information about Israel's snake species, and I'll update them gradually with my own photos and field notes. If you're an expert or fellow hunter and spot something that needs correcting, get in touch.",
       photoSoon: "Field photo coming soon"
+    },
+    unknown: {
+      breadcrumb: "Library of Unknown Snakes",
+      eyebrow: "19 non-venomous species",
+      title: "Library of Unknown Snakes in Israel",
+      lead: "A collection of lesser-known, non-venomous snakes documented in Israel.",
+      noticeText: "These species are non-venomous and harmless to humans; some are rear-fanged with very mild venom."
     },
 
     adventures: {
