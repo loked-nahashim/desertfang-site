@@ -8,7 +8,7 @@ const I18N = {
 
   ar: {
     dir: "rtl",
-    nav: { home:"الرئيسية", guide:"دليل الأفاعي", adventures:"الصيد الفعلي", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
+    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"الصيد الفعلي", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
     news: {
       breadcrumb: "الأخبار",
       eyebrow: "آخر المستجدّات",
@@ -89,6 +89,26 @@ const I18N = {
       title: "مكتبة الأفاعي الغير معروفة في إسرائيل",
       lead: "مجموعة من الأفاعي غير المعروفة وغير السامة الموثّقة في إسرائيل.",
       noticeText: "هذه الأنواع غير سامة وغير خطرة على الإنسان، وبعضها خلفي الأنياب بسمّ خفيف جدًا."
+    },
+    stats: {
+      breadcrumb: "إحصاءات وبيانات",
+      eyebrow: "بيانات 2022–2026",
+      title: "بيانات اصطياد الأفاعي في إسرائيل",
+      lead: "تحليل لأكثر من ستّة آلاف حالة اصطياد أفاعٍ مبلّغ عنها في إسرائيل بين عامَي 2022 و2026، اعتمادًا على بيانات سلطة الطبيعة والحدائق.",
+      kpiEvents: "إجمالي حالات الاصطياد المبلّغ عنها",
+      kpiVenom: "حالات لأنواع سامة",
+      kpiTopFive: "من الحالات تخصّ خمسة أنواع فقط",
+      kpiCore: "من البيانات في السنوات 2023–2025",
+      methodTitle: "المصدر والمنهجية",
+      methodText: "حُلّلت 6,056 حالة اصطياد أفاعٍ مبلّغ عنها ضمن مبادرة «حماة زواحف البلاد / Reptiles of Israel»، من قاعدة بيانات وردت من سلطة الطبيعة والحدائق عبر طلب حرية معلومات. يشمل الملف تاريخ الحادثة والإحداثيات الجغرافية واسم النوع بالعبرية والاسم العلمي. عولجت البيانات دون إضافة أي معطيات ناقصة أو اختلاق حالات. مهم: هذه حالات اصطياد مبلّغ عنها، وليست مسحًا لأعداد الأفاعي أو خريطة انتشارها في البرّية؛ فكثرة الحالات في منطقة ما لا تعني بالضرورة كثافة أعلى للأفاعي.",
+      topTitle: "أكثر خمسة أنواع في بلاغات الاصطياد",
+      topLead: "خمسة أنواع تجمع معظم الحالات الموثّقة (83.7% من الإجمالي)؛ وبقية الأنواع مجتمعةً لا تتجاوز 16.3%.",
+      venomTitle: "الأنواع السامة في البلاغات",
+      venomLead: "شكّلت الأنواع السامة 41.8% من الحالات، وتصدّرتها الأفعى الفلسطينية بفارق كبير (94.9% من حالات الأنواع السامة).",
+      monthsTitle: "الموسمية — متى تكثر حالات الاصطياد؟",
+      monthsLead: "لا تتوزّع الحالات بالتساوي على مدار السنة: ذروة واضحة في الربيع وأوائل الصيف (مايو ويونيو)، وارتفاع ثانٍ في الخريف (سبتمبر وأكتوبر)، وأدنى المستويات في أشهر الشتاء. (الأشهر المعروضة هي التي فصّلها المصدر.)",
+      venomTag: "سامة",
+      disclaimer: "ملاحظة: تعكس هذه الأرقام حالات اصطياد مبلّغ عنها فقط، ولا تمثّل قياسًا مباشرًا لأعداد الأفاعي أو نشاطها في الطبيعة."
     },
 
     adventures: {
@@ -393,7 +413,7 @@ const I18N = {
 
   he: {
     dir: "rtl",
-    nav: { home:"בית", guide:"מדריך הנחשים", adventures:"לכידות בפועל", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
+    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"לכידות בפועל", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
     news: {
       breadcrumb: "חדשות",
       eyebrow: "העדכונים האחרונים",
@@ -474,6 +494,26 @@ const I18N = {
       title: "ספריית הנחשים הלא-מוכרים בישראל",
       lead: "אוסף של נחשים לא-מוכרים ולא ארסיים שתועדו בישראל.",
       noticeText: "מינים אלה אינם ארסיים ואינם מסוכנים לאדם, וחלקם בעלי ארס אחורי חלש מאוד."
+    },
+    stats: {
+      breadcrumb: "נתונים וסטטיסטיקה",
+      eyebrow: "נתוני 2022–2026",
+      title: "נתוני לכידות נחשים בישראל",
+      lead: "ניתוח של יותר מששת אלפים אירועי לכידת נחשים מדווחים בישראל בין השנים 2022 ל־2026, על בסיס נתוני רשות הטבע והגנים.",
+      kpiEvents: "סך אירועי הלכידה המדווחים",
+      kpiVenom: "אירועים של מינים ארסיים",
+      kpiTopFive: "מהאירועים שייכים לחמישה מינים בלבד",
+      kpiCore: "מהנתונים בשנים 2023–2025",
+      methodTitle: "מקור ומתודולוגיה",
+      methodText: "נותחו 6,056 אירועי לכידת נחשים מדווחים במסגרת מיזם «שומרים על זוחלי הארץ / Reptiles of Israel», ממאגר שהתקבל מרשות הטבע והגנים בבקשת חופש מידע. הקובץ כולל את תאריך האירוע, נקודת הציון הגאוגרפית, שם הטקסון בעברית ושמו המדעי. המידע עובד ללא השלמת נתונים חסרים או יצירת אירועים. חשוב: מדובר באירועי לכידה מדווחים, ולא בסקר אוכלוסייה או במפת תפוצה; ריבוי אירועים באזור אינו מעיד בהכרח על צפיפות גבוהה יותר של נחשים.",
+      topTitle: "חמשת המינים המובילים בדיווחי הלכידה",
+      topLead: "חמישה מינים מרכזים את רוב האירועים (83.7% מהמאגר); כל יתר המינים יחד מהווים 16.3% בלבד.",
+      venomTitle: "המינים הארסיים בדיווחי הלכידה",
+      venomLead: "המינים הארסיים היוו 41.8% מהאירועים, כשהצפע המצוי בולט בפער גדול (94.9% מאירועי המינים הארסיים).",
+      monthsTitle: "עונתיות — מתי מתרחשות יותר לכידות?",
+      monthsLead: "האירועים אינם מתחלקים באופן שווה לאורך השנה: שיא ברור באביב ובתחילת הקיץ (מאי ויוני), עלייה נוספת בסתיו (ספטמבר ואוקטובר), והמספרים הנמוכים ביותר בחורף. (מוצגים החודשים שפורטו במקור.)",
+      venomTag: "ארסי",
+      disclaimer: "הערה: הנתונים משקפים אירועי לכידה מדווחים בלבד, ואינם מדידה ישירה של גודל אוכלוסיות הנחשים או פעילותן בטבע."
     },
 
     adventures: {
@@ -778,7 +818,7 @@ const I18N = {
 
   en: {
     dir: "ltr",
-    nav: { home:"Home", guide:"Snake Guide", adventures:"Live Hunting", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", privacy:"Privacy", about:"About", contact:"Contact" },
+    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Live Hunting", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", privacy:"Privacy", about:"About", contact:"Contact" },
     news: {
       breadcrumb: "News",
       eyebrow: "Latest Updates",
@@ -859,6 +899,26 @@ const I18N = {
       title: "Library of Unknown Snakes in Israel",
       lead: "A collection of lesser-known, non-venomous snakes documented in Israel.",
       noticeText: "These species are non-venomous and harmless to humans; some are rear-fanged with very mild venom."
+    },
+    stats: {
+      breadcrumb: "Data & Statistics",
+      eyebrow: "2022–2026 data",
+      title: "Snake Capture Data in Israel",
+      lead: "An analysis of more than six thousand reported snake-capture events in Israel between 2022 and 2026, based on data from the Nature and Parks Authority.",
+      kpiEvents: "Total reported capture events",
+      kpiVenom: "Events involving venomous species",
+      kpiTopFive: "of events belong to just five species",
+      kpiCore: "of the data falls in 2023–2025",
+      methodTitle: "Source & methodology",
+      methodText: "6,056 reported snake-capture events were analyzed within the «Reptiles of Israel» initiative, from a database obtained from the Nature and Parks Authority via a freedom-of-information request. The file includes the event date, geographic coordinates, the taxon name in Hebrew, and its scientific name. The data was processed without filling in missing values or fabricating events. Important: these are reported capture events, not a population survey or distribution map; a high number of events in an area does not necessarily indicate a higher density of snakes.",
+      topTitle: "Top five species in capture reports",
+      topLead: "Five species account for most documented events (83.7% of the total); all other species combined make up just 16.3%.",
+      venomTitle: "Venomous species in the reports",
+      venomLead: "Venomous species made up 41.8% of events, with the Palestine Viper standing out by a wide margin (94.9% of venomous-species events).",
+      monthsTitle: "Seasonality — when do captures peak?",
+      monthsLead: "Events are not spread evenly across the year: a clear peak in spring and early summer (May and June), a secondary rise in autumn (September and October), and the lowest numbers in winter. (The months shown are those detailed in the source.)",
+      venomTag: "Venomous",
+      disclaimer: "Note: these figures reflect reported capture events only, and are not a direct measurement of snake population sizes or their activity in the wild."
     },
 
     adventures: {

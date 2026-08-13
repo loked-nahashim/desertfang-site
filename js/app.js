@@ -59,6 +59,64 @@ function applyI18n(lang){
   document.dispatchEvent(new CustomEvent('i18n:applied', { detail: { lang } }));
 }
 
+/* ---------- عرض صفحة الإحصاءات ---------- */
+function renderStats(lang){
+  if (typeof statsData === 'undefined') return;
+  const dict = I18N[lang] || I18N[I18N_DEFAULT_LANG];
+  const s = dict.stats; const t = statsData.totals;
+  const nf = n => n.toLocaleString(lang === 'he' ? 'he-IL' : 'en-US');
+
+  // بطاقات الأرقام البارزة
+  const kpi = document.getElementById('stats-kpi');
+  if (kpi){
+    const cards = [
+      { v:nf(t.events), l:s.kpiEvents },
+      { v:nf(t.venomEvents)+' · '+t.venomPct+'%', l:s.kpiVenom },
+      { v:t.topFivePct+'%', l:s.kpiTopFive },
+      { v:t.coreYearsPct+'%', l:s.kpiCore }
+    ];
+    kpi.innerHTML = cards.map(c => `<div class="stat-kpi"><b>${escapeHtml(c.v)}</b><span>${escapeHtml(c.l)}</span></div>`).join('');
+  }
+
+  // رسم أعمدة أفقي عام
+  function barRows(items, maxPct, accent){
+    return items.map(it => {
+      const nm = it.name[lang];
+      const w = Math.max(2, (it.pct / maxPct) * 100);
+      const badge = it.venom ? ` <span class="stat-vtag">${escapeHtml(s.venomTag)}</span>` : '';
+      const note = it.note ? `<span class="stat-note">${escapeHtml(it.note[lang])}</span>` : '';
+      return `<div class="stat-row">
+        <div class="stat-label">${escapeHtml(nm)}${badge}${note}</div>
+        <div class="stat-track"><div class="stat-fill" style="width:${w}%; background:${accent};"><span>${escapeHtml(nf(it.count))} · ${it.pct}%</span></div></div>
+      </div>`;
+    }).join('');
+  }
+
+  const topGrid = document.getElementById('stats-top');
+  if (topGrid){
+    const mx = Math.max(...statsData.topSpecies.map(x=>x.pct));
+    topGrid.innerHTML = barRows(statsData.topSpecies, mx, 'var(--ember)');
+  }
+  const venomGrid = document.getElementById('stats-venom');
+  if (venomGrid){
+    const mx = Math.max(...statsData.venomSpecies.map(x=>x.pct));
+    venomGrid.innerHTML = barRows(statsData.venomSpecies, mx, 'var(--ember-deep)');
+  }
+
+  // رسم أعمدة عمودي للأشهر
+  const monthsWrap = document.getElementById('stats-months');
+  if (monthsWrap){
+    const mx = Math.max(...statsData.months.map(x=>x.pct));
+    monthsWrap.innerHTML = statsData.months.map(m => {
+      const h = Math.max(6, (m.pct / mx) * 100);
+      return `<div class="stat-col">
+        <div class="stat-colbar-wrap"><div class="stat-colval">${m.pct}%</div><div class="stat-colbar" style="height:${h}%;"></div></div>
+        <div class="stat-colname">${escapeHtml(m.name[lang])}</div>
+      </div>`;
+    }).join('');
+  }
+}
+
 /* ---------- عرض مكتبة الأفاعي الغير معروفة ---------- */
 function renderUnknown(lang){
   const grid = document.getElementById('unknown-grid');
@@ -321,6 +379,7 @@ function renderArticles(lang){
 function renderPageContent(lang){
   renderSpecies(lang);
   renderUnknown(lang);
+  renderStats(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');
   renderSpeciesArticle(lang, 'safe-article', 'safe', 'articleSafe');
   renderAdventures(lang);
