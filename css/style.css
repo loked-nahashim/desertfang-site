@@ -336,7 +336,7 @@ h1,h2,h3,h4{ font-family: var(--font-display); margin:0; color: var(--ink); }
 
 .hero-eyebrow{ margin-bottom: 18px; }
 .hero h1{
-  font-size: clamp(2.2rem, 4.4vw, 3.5rem);
+  font-size: clamp(1.85rem, 3.6vw, 2.9rem);
   font-weight: 900;
   line-height:1.18;
 }
@@ -1257,3 +1257,6 @@ html[dir="ltr"] .article-species-body{ padding: 28px 0 28px 28px; }
   .wrap{ padding:0 16px; }
   section{ overflow-x:hidden; }
 }
+
+/* الاسم+الهاتف بالإنجليزية: سطر واحد يتقلّص تلقائياً ليتّسع */
+html[lang="en"] .lead-contact{ font-size:clamp(.6rem, 3vw, .95rem) !important; white-space:nowrap; }

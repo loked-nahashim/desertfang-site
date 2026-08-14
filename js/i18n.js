@@ -31,6 +31,7 @@ const I18N = {
       titleLine1: "ناب الصحراء",
       titleLine2: "أفاعي إسرائيل، وجهًا لوجه مع 42 نوعًا",
       lead: "موقع شامل للتعرّف إلى ثعابين إسرائيل، السامة وغير السامة، ودورها في الحفاظ على التوازن البيئي.\nتضم معلومات عن 21 نوعًا من الزواحف التي يتعين على حاملي رخصة صيد الثعابين معرفتها.\nوتشمل 9 أنواع من الثعابين السامة و 12 نوعًا من الزواحف غير السامة المنتشرة في المناطق المأهولة بالسكان في إسرائيل.\nبالمعرفة والتوعية لنحمي الزواحف، ونحافظ على التوازن البيئي من أجل الأجيال القادمة.",
+      leadContact: "مارون دانيال: صائد أفاعٍ مرخّص - ⁦052-2642309⁩",
       btnGuide: "تصفح دليل الأفاعي",
       btnAdventures: "مغامراتي في الميدان",
       tagLabel: "سجل الميدان · الصياد",
@@ -66,7 +67,7 @@ const I18N = {
       guidePreviewText: "إسرائيل، رغم صغر مساحتها، تقع على تقاطع بيئي بين أوروبا وآسيا وأفريقيا، ما يمنحها تنوعًا كبيرًا من الأفاعي بين السواحل والجبال والصحراء. في هذا الدليل أجمع أهم الأنواع الموثقة، مع صورة ميدانية وبيانات التعرف ومستوى الخطورة لكل نوع.",
       guidePreviewBtn: "اذهب إلى الدليل الكامل",
       venomLabel: "سامّة", venomCaption: "أنواع سامة موثقة في إسرائيل",
-      safeLabel: "غير سامّة", safeCaption: "نوعًا غير سام منتشرًا في البلاد",
+      safeLabel: "غير سامّة", safeCaption: "نوع غير سام منتشر في البلاد",
       noticeStrong: "تنويه مهم:",
       noticeText: "هذا الموقع للتوثيق والتثقيف الميداني فقط، وليس بديلاً عن الاستشارة الطبية أو المتخصصة. لا تحاول الإمساك بأي أفعى دون خبرة أو تدريب كافٍ، وفي حال التعرض للدغة اطلب المساعدة الطبية فورًا."
     },
@@ -436,6 +437,7 @@ const I18N = {
       titleLine1: "ניב המדבר",
       titleLine2: "נחשי ישראל, פנים אל פנים עם 42 מינים",
       lead: "אתר מקיף להיכרות עם נחשי ישראל, הארסיים והלא־ארסיים, ותפקידם בשמירה על האיזון האקולוגי.\nכולל מידע על 21 מיני זוחלים שעל בעלי רישיון לכידת נחשים להכיר.\nמכיל 9 מיני נחשים ארסיים ו־12 מיני זוחלים לא־ארסיים הנפוצים באזורים המיושבים בישראל.\nבעזרת ידע ומודעות נגן על הזוחלים ונשמור על האיזון האקולוגי למען הדורות הבאים.",
+      leadContact: "מארון דאניאל: לוכד נחשים מוסמך - 052-2642309",
       btnGuide: "עיינו במדריך הנחשים",
       btnAdventures: "ההרפתקאות שלי בשטח",
       tagLabel: "יומן שטח · הלוכד",
@@ -841,6 +843,7 @@ const I18N = {
       titleLine1: "Desert Fang",
       titleLine2: "Israel's snakes, face to face with 42 species",
       lead: "A comprehensive website for getting to know Israel's snakes, venomous and non-venomous, and their role in maintaining the ecological balance.\nIt includes information on 21 reptile species that Snake Hunter license holders are required to know.\nIt covers 9 venomous snake species and 12 non-venomous reptile species common in populated areas in Israel.\nThrough knowledge and awareness, let us protect reptiles and preserve the ecological balance for generations to come.",
+      leadContact: "Maroun Danial: Certified Snake Catcher - 052-2642309",
       btnGuide: "Browse the Snake Guide",
       btnAdventures: "My Field Adventures",
       tagLabel: "FIELD LOG · THE HUNTER",
@@ -1224,11 +1227,11 @@ const I18N = {
 };
 
 /* اللغة الافتراضية والمخزَّنة محليًا */
-const I18N_DEFAULT_LANG = "ar";
+const I18N_DEFAULT_LANG = "he";
 function i18nGetLang(){
-  try{ return localStorage.getItem("df_lang") || I18N_DEFAULT_LANG; }
+  try{ return localStorage.getItem("df_lang_v2") || I18N_DEFAULT_LANG; }
   catch(e){ return I18N_DEFAULT_LANG; }
 }
 function i18nSetLang(lang){
-  try{ localStorage.setItem("df_lang", lang); }catch(e){}
+  try{ localStorage.setItem("df_lang_v2", lang); }catch(e){}
 }
