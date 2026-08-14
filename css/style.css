@@ -48,6 +48,7 @@ body{
   line-height: 1.75;
   overflow-x: hidden;
 }
+html{ overflow-x:hidden; max-width:100%; }
 
 /* الاتجاه: عربي وعبري من اليمين لليسار، الإنجليزية من اليسار لليمين */
 html[lang="ar"] body, html[lang="he"] body{ direction: rtl; text-align: right; }
@@ -1230,3 +1231,28 @@ html[dir="ltr"] .article-species-body{ padding: 28px 0 28px 28px; }
 .stats-section{ margin-top:40px; }
 .stats-section h2{ font-family:var(--font-display); font-size:1.4rem; color:var(--ink); margin-bottom:6px; }
 .stats-section .sec-lead{ color:var(--ink-soft); margin-bottom:18px; line-height:1.7; }
+
+/* ===== إصلاحات تخطيط قسم دليل الأنواع في الرئيسية ===== */
+.guide-preview-grid{ display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
+.stat-pair{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.tilt-r{ transform:rotate(1.5deg); }
+.tilt-l{ transform:rotate(-1.5deg); margin-top:34px; }
+@media (max-width:780px){
+  .guide-preview-grid{ grid-template-columns:1fr; gap:30px; }
+  .tilt-r,.tilt-l{ transform:none; margin-top:0; }
+}
+.tag-label{ white-space:nowrap; }
+
+/* ===== إصلاحات عامّة للجوال (منع التمرير الأفقي وترتيب الهيدر) ===== */
+@media (max-width:600px){
+  .site-header .wrap{ height:70px; gap:8px; }
+  .brand-mark{ height:42px; }
+  .brand-text b{ font-size:1rem; }
+  .brand-text span{ display:none; }
+  .lang-btn{ padding:6px 8px; font-size:.66rem; }
+  .header-right{ gap:6px; }
+  .nav-toggle{ width:42px; height:42px; }
+  .main-nav{ inset:70px 0 0 0; }
+  .wrap{ padding:0 16px; }
+  section{ overflow-x:hidden; }
+}
