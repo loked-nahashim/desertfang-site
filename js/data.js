@@ -335,6 +335,21 @@ const videosData = [
 
 /* ---------- 5) مكتبة المقالات: أضف مقالًا جديدًا هنا ---------- */
 const articlesData = [
+  { tag:{ ar:"دليل عملي", he:"מדריך מעשי", en:"Practical Guide" },
+    href:"article-snake-in-house.html",
+    title:{ ar:"ماذا تفعل حين تجد أفعى في بيتك أو حديقتك؟", he:"מה עושים כשמוצאים נחש בבית או בחצר?", en:"What to Do When You Find a Snake in Your Home or Yard" },
+    excerpt:{ ar:"خطوات هادئة تحميك وتحمي الأفعى في الدقائق الأولى، وأخطاء شائعة يقع فيها كثيرون، ومتى تطلب صائدًا مرخّصًا.", he:"צעדים רגועים שמגנים עליכם ועל הנחש בדקות הראשונות, טעויות נפוצות שרבים נופלים בהן, ומתי להזעיק לוכד מוסמך.", en:"Calm steps that protect you and the snake in the first minutes, common mistakes many make, and when to call a licensed catcher." } },
+
+  { tag:{ ar:"معرفة ميدانية", he:"ידע מהשטח", en:"Field Knowledge" },
+    href:"article-snake-season.html",
+    title:{ ar:"موسم الأفاعي في إسرائيل: متى تنشط، ولماذا؟", he:"עונת הנחשים בישראל: מתי הם פעילים, ולמה?", en:"Snake Season in Israel: When Are They Active, and Why?" },
+    excerpt:{ ar:"كيف يتغيّر سلوك الأفاعي عبر فصول السنة — الربيع والصيف والخريف والشتاء — ولماذا يساعدك فهم إيقاعها على تفادي المفاجآت.", he:"כיצד משתנה התנהגות הנחשים לאורך עונות השנה — אביב, קיץ, סתיו וחורף — ולמה הבנת המקצב שלהם עוזרת להימנע מהפתעות.", en:"How snake behavior shifts through the seasons — spring, summer, autumn, and winter — and why understanding their rhythm helps you avoid surprises." } },
+
+  { tag:{ ar:"وقاية وسلامة", he:"מניעה ובטיחות", en:"Prevention & Safety" },
+    href:"article-prevent.html",
+    title:{ ar:"كيف تُبعد الأفاعي عن بيتك وحديقتك؟", he:"איך מרחיקים נחשים מהבית ומהחצר?", en:"How to Keep Snakes Away From Your Home and Garden" },
+    excerpt:{ ar:"الوقاية الحقيقية لا تطرد الأفعى، بل تُزيل ما جذبها: الطعام والاختباء والمداخل — والحقيقة وراء المواد الطاردة الشائعة.", he:"מניעה אמיתית אינה מגרשת את הנחש אלא מסירה את מה שמשך אותו: מזון, מחסה ופתחים — והאמת מאחורי חומרי הדחייה הנפוצים.", en:"Real prevention doesn't chase the snake away; it removes what drew it — food, shelter, and entry points — plus the truth behind common repellents." } },
+
   { tag:{ ar:"دليل ميداني", he:"מדריך שטח", en:"Field Guide" },
     href:"article-venomous.html",
     title:{ ar:"الأفاعي السامة في إسرائيل — دليل الأنواع التسعة", he:"הנחשים הארסיים בישראל — מדריך תשעת המינים", en:"The Venomous Snakes of Israel — Guide to All Nine Species" },

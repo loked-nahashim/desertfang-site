@@ -1260,3 +1260,13 @@ html[dir="ltr"] .article-species-body{ padding: 28px 0 28px 28px; }
 
 /* الاسم+الهاتف بالإنجليزية: سطر واحد يتقلّص تلقائياً ليتّسع */
 html[lang="en"] .lead-contact{ font-size:clamp(.6rem, 3vw, .95rem) !important; white-space:nowrap; }
+
+/* ===== بطاقات الأنواع القابلة للنقر + صفحة مقال النوع ===== */
+a.species-card-link{ text-decoration:none; color:inherit; display:block; cursor:pointer; transition:transform .25s ease, box-shadow .25s ease; }
+a.species-card-link:hover{ transform:translateY(-4px); box-shadow:0 14px 34px rgba(20,14,8,.16); }
+.species-readmore{ display:inline-block; margin-top:12px; font-family:var(--font-mono); font-size:.78rem; color:var(--ember); font-weight:700; }
+a.species-card-link:hover .species-readmore{ text-decoration:underline; }
+.snake-hero-media{ position:relative; border-radius:16px; overflow:hidden; margin-bottom:24px; box-shadow:var(--shadow); }
+.snake-hero-media img{ width:100%; height:auto; display:block; }
+.snake-hero-media .species-badge{ position:absolute; top:14px; inset-inline-start:14px; }
+.snake-facts{ margin:22px 0; }

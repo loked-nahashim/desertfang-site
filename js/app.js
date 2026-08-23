@@ -146,6 +146,35 @@ function renderUnknown(lang){
   }).join('');
 }
 
+/* ---------- عرض صفحة مقال نوع واحد ---------- */
+function renderSnakeArticle(lang){
+  const host = document.getElementById('snake-article');
+  if (!host || typeof speciesArticles === 'undefined') return;
+  const slug = document.body.dataset.slug;
+  const sp = speciesData.find(s => (s.latin||'').toLowerCase().replace(/ /g,'-') === slug);
+  const art = speciesArticles[slug] && speciesArticles[slug][lang];
+  if (!sp || !art) return;
+  const g = I18N[lang].guide;
+  const nm=document.getElementById('sa-name'); if(nm) nm.textContent=sp.name[lang];
+  const lt=document.getElementById('sa-latin'); if(lt) lt.textContent=sp.latin;
+  const ld=document.getElementById('sa-lead'); if(ld) ld.textContent=art.lead;
+  const badge = sp.type==='venom' ? g.badgeVenom : g.badgeSafe;
+  const badgeClass = sp.type==='venom' ? 'badge-venom' : 'badge-safe';
+  host.innerHTML = `
+    <div class="snake-hero-media reveal in"><img src="${escapeHtml(sp.imgArticle||sp.img)}" alt="${escapeHtml(sp.name[lang])}"><span class="species-badge ${badgeClass}">${escapeHtml(badge)}</span></div>
+    <p class="article-intro reveal in">${escapeHtml(art.intro)}</p>
+    <ul class="article-facts snake-facts reveal in">
+      <li><b>${escapeHtml(g.lengthLabel)}</b><span>${escapeHtml(sp.length[lang])}</span></li>
+      ${sp.diet?`<li><b>${escapeHtml(g.dietLabel)}</b><span>${escapeHtml(sp.diet[lang])}</span></li>`:''}
+      <li><b>${escapeHtml(g.rangeLabel)}</b><span>${escapeHtml(sp.range[lang])}</span></li>
+    </ul>
+    <h2 class="reveal in">${escapeHtml(art.s1title)}</h2>
+    <p class="reveal in">${escapeHtml(art.s1)}</p>
+    <h2 class="reveal in">${escapeHtml(art.s2title)}</h2>
+    <p class="reveal in">${escapeHtml(art.s2)}</p>
+    <div class="gear-warning reveal in"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2l9 4.5v6c0 5.2-3.8 8.6-9 9.5-5.2-.9-9-4.3-9-9.5v-6L12 2z" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5M12 16.2v.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><p>${escapeHtml(art.close)}</p></div></div>`;
+}
+
 /* ---------- عرض دليل الأفاعي ---------- */
 function renderSpecies(lang){
   const grid = document.getElementById('species-grid');
@@ -159,8 +188,9 @@ function renderSpecies(lang){
     const photo = sp.img
       ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}">`
       : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
-    return `
-      <div class="species-card reveal in" data-type="${sp.type}">
+    const slug = (sp.latin || '').toLowerCase().replace(/ /g, '-');
+    const hasArticle = (typeof speciesArticles !== 'undefined') && speciesArticles[slug];
+    const cardInner = `
         <div class="species-photo">${photo}<span class="species-badge ${badgeClass}">${escapeHtml(badgeText)}</span></div>
         <div class="species-body">
           <div class="species-top">
@@ -172,8 +202,12 @@ function renderSpecies(lang){
             ${sp.diet ? `<span>${escapeHtml(g.dietLabel)}: <strong>${escapeHtml(sp.diet[lang])}</strong></span>` : ''}
             <span>${escapeHtml(g.rangeLabel)}: <strong>${escapeHtml(sp.range[lang])}</strong></span>
           </div>
-        </div>
-      </div>`;
+          ${hasArticle ? `<span class="species-readmore">${escapeHtml((g.readMore || 'اقرأ المقال الكامل ←'))}</span>` : ''}
+        </div>`;
+    if (hasArticle){
+      return `<a href="snake-${slug}.html" class="species-card species-card-link reveal in" data-type="${sp.type}">${cardInner}</a>`;
+    }
+    return `<div class="species-card reveal in" data-type="${sp.type}">${cardInner}</div>`;
   }).join('');
 
   applyActiveFilter();
@@ -380,6 +414,7 @@ function renderPageContent(lang){
   renderSpecies(lang);
   renderUnknown(lang);
   renderStats(lang);
+  renderSnakeArticle(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');
   renderSpeciesArticle(lang, 'safe-article', 'safe', 'articleSafe');
   renderAdventures(lang);
