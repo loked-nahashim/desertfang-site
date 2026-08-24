@@ -1290,3 +1290,13 @@ a.edu-card:hover{ transform:translateY(-5px); box-shadow:0 16px 38px rgba(20,14,
 .edu-card .edu-readmore{ font-family:var(--font-mono); font-size:.78rem; color:var(--ember); font-weight:700; }
 a.edu-card:hover .edu-readmore{ text-decoration:underline; }
 .edu-map-labels text{ font-family:var(--font-sans); font-weight:700; }
+
+/* ===== خرائط البيئة حسب اللغة ===== */
+.edu-map-img{ display:none; width:100%; height:auto; border-radius:16px; box-shadow:var(--shadow); }
+html[lang="ar"] .edu-map-ar{ display:block; }
+html[lang="he"] .edu-map-he{ display:block; }
+html[lang="en"] .edu-map-en{ display:block; }
+
+/* ===== خلفية الصحراء لبطاقات البيئة ===== */
+a.edu-card{ background-image: linear-gradient(rgba(245,235,214,.74), rgba(245,235,214,.82)), url("../images/edu-desert-bg.jpg?v=20260818k"); background-size:cover; background-position:center; }
+a.edu-card:hover{ background-image: linear-gradient(rgba(245,235,214,.66), rgba(245,235,214,.76)), url("../images/edu-desert-bg.jpg?v=20260818k"); }
