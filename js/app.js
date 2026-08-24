@@ -158,21 +158,25 @@ function renderSnakeArticle(lang){
   const nm=document.getElementById('sa-name'); if(nm) nm.textContent=sp.name[lang];
   const lt=document.getElementById('sa-latin'); if(lt) lt.textContent=sp.latin;
   const ld=document.getElementById('sa-lead'); if(ld) ld.textContent=art.lead;
-  const badge = sp.type==='venom' ? g.badgeVenom : g.badgeSafe;
-  const badgeClass = sp.type==='venom' ? 'badge-venom' : 'badge-safe';
-  host.innerHTML = `
-    <div class="snake-hero-media reveal in"><img src="${escapeHtml(sp.imgArticle||sp.img)}" alt="${escapeHtml(sp.name[lang])}"><span class="species-badge ${badgeClass}">${escapeHtml(badge)}</span></div>
-    <p class="article-intro reveal in">${escapeHtml(art.intro)}</p>
-    <ul class="article-facts snake-facts reveal in">
+  function paras(txt){ return String(txt||'').split(/\n\n+/).map(p=>p.trim()).filter(Boolean).map(p=>`<p class="reveal in">${escapeHtml(p)}</p>`).join(''); }
+  const isVenom = sp.type==='venom';
+  const dBadge = `<div class="danger-badge ${isVenom?'danger-venom':'danger-safe'} reveal in">${escapeHtml(isVenom?g.badgeVenom:g.badgeSafe)}</div>`;
+  let html = dBadge + paras(art.intro);
+  html += `<ul class="article-facts snake-facts reveal in">
       <li><b>${escapeHtml(g.lengthLabel)}</b><span>${escapeHtml(sp.length[lang])}</span></li>
       ${sp.diet?`<li><b>${escapeHtml(g.dietLabel)}</b><span>${escapeHtml(sp.diet[lang])}</span></li>`:''}
       <li><b>${escapeHtml(g.rangeLabel)}</b><span>${escapeHtml(sp.range[lang])}</span></li>
-    </ul>
-    <h2 class="reveal in">${escapeHtml(art.s1title)}</h2>
-    <p class="reveal in">${escapeHtml(art.s1)}</p>
-    <h2 class="reveal in">${escapeHtml(art.s2title)}</h2>
-    <p class="reveal in">${escapeHtml(art.s2)}</p>
-    <div class="gear-warning reveal in"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2l9 4.5v6c0 5.2-3.8 8.6-9 9.5-5.2-.9-9-4.3-9-9.5v-6L12 2z" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5M12 16.2v.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><p>${escapeHtml(art.close)}</p></div></div>`;
+    </ul>`;
+  for (let i=1;i<=8;i++){
+    const t=art['s'+i+'title'], b=art['s'+i];
+    if(!t && !b) continue;
+    if(t) html += `<h2 class="reveal in">${escapeHtml(t)}</h2>`;
+    if(b) html += paras(b);
+  }
+  if(art.close){
+    html += `<div class="gear-warning reveal in"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2l9 4.5v6c0 5.2-3.8 8.6-9 9.5-5.2-.9-9-4.3-9-9.5v-6L12 2z" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5M12 16.2v.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div>${paras(art.close)}</div></div>`;
+  }
+  host.innerHTML = html;
 }
 
 /* ---------- عرض دليل الأفاعي ---------- */

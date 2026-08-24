@@ -1270,3 +1270,8 @@ a.species-card-link:hover .species-readmore{ text-decoration:underline; }
 .snake-hero-media img{ width:100%; height:auto; display:block; }
 .snake-hero-media .species-badge{ position:absolute; top:14px; inset-inline-start:14px; }
 .snake-facts{ margin:22px 0; }
+
+/* ===== شارة سام/غير سام داخل المقال ===== */
+.danger-badge{ display:inline-block; padding:7px 20px; border-radius:999px; font-family:var(--font-mono); font-weight:800; font-size:.82rem; letter-spacing:.02em; margin-bottom:22px; color:#fff; box-shadow:0 4px 14px rgba(20,14,8,.18); }
+.danger-badge.danger-venom{ background:#C62828; }
+.danger-badge.danger-safe{ background:#2E7D32; }
