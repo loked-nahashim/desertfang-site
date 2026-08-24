@@ -8,7 +8,7 @@ const I18N = {
 
   ar: {
     dir: "rtl",
-    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"الصيد الفعلي", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
+    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
     news: {
       breadcrumb: "الأخبار",
       eyebrow: "آخر المستجدّات",
@@ -298,6 +298,39 @@ const I18N = {
       s3b: "أمّا المساحيق والمواد «الطاردة للأفاعي» التي تُباع بوعودٍ كبيرة، فتعامل معها بحذر شديد؛ فأكثرها لا يقدّم حمايةً موثوقة، وبعضها قد يكون سامًّا لحيواناتك الأليفة أو لأطفالك. لا شيء يُغني عن إزالة الطعام والاختباء وسدّ المداخل — فهذه هي الوقاية التي تعمل فعلًا.",
       close: "الهدف ليس أرضًا خاليةً من الأفاعي تمامًا؛ فهذا غير واقعيّ وغير صحّيّ للطبيعة من حولنا. الهدف أن يكون بيتك ومحيطه المباشر مكانًا غير جاذبٍ لها، فتمرّ الأفعى من بعيد بدل أن تستقرّ قريبًا. وحين تدخل واحدةٌ رغم كل ذلك، تذكّر الخطوة الأصعب والأهمّ: الهدوء، ثم الاتصال بصائد مرخّص."
     },
+    eco: {
+      hero: {"eyebrow": "بيئة الزواحف", "title": "إسرائيل: مُفترَق طرق الزواحف", "lead": "موقعٌ فريد بين ثلاث قارّات ومناخٌ متوسّطيّ جعلا هذه البقعة الصغيرة بيتًا لتنوّعٍ مذهل من الزواحف."},
+      map: {"title": "خريطة إسرائيل ومحيطها", "sea": "البحر الأبيض المتوسط", "israel": "إسرائيل", "lebanon": "لبنان", "syria": "سوريا", "jordan": "الأردن", "egypt": "مصر", "redsea": "البحر الأحمر", "caption": "إسرائيل جسرٌ برّيّ ضيّق يربط إفريقيا بآسيا وأوروبا، تحدّه المياه غربًا والصحراء جنوبًا والجبال شمالًا."},
+      readMore: "اقرأ المقال الكامل ←",
+      backToHub: "← العودة إلى بيئة الزواحف",
+      c1t: "مناخ البحر المتوسط: لماذا هو مثاليّ للزواحف؟",
+      c1d: "الفصول المعتدلة والشمس الوفيرة تصنع بيئةً تحلم بها ذوات الدم البارد.",
+      c2t: "موقع إسرائيل: جسرٌ بين ثلاث قارّات",
+      c2d: "الدول المحيطة بها من كل جهة، ولماذا يجعلها موقعها ملتقى طرقٍ للحياة.",
+      c3t: "من أين جاءت زواحف إسرائيل؟",
+      c3d: "أنواعٌ انحدرت من إفريقيا وآسيا وأوروبا والتقت كلّها في هذه البقعة.",
+      c4t: "البحر المتوسط: بيئة حيّة نابضة",
+      c4d: "السواحل والموائل المتوسّطية كبيئةٍ غنيّة تنبض بالزواحف.",
+      c5t: "إسرائيل: بيت الزواحف الشرق أوسطية",
+      c5d: "تنوّعٌ كبير من الأفاعي والسحالي والسلاحف في مساحةٍ صغيرة.",
+      c6t: "الغنى البيئي وسرّ البقاء",
+      c6d: "بحرٌ وجبلٌ وصحراءٌ وغور — فسيفساءُ بيئاتٍ هي مصدر بقاء الزواحف."
+    },
+    edu: {
+      eyebrow: "بيئة الزواحف",
+      title: "إسرائيل: مفترق قارّات وموطن الزواحف",
+      lead: "موقعٌ فريد بين البحر والصحراء والجبل جعل هذه البقعة الصغيرة من أغنى بيئات الزواحف في الشرق الأوسط. اكتشف لماذا في ستّ محطّات.",
+      mapTitle: "خريطة الموقع: إسرائيل ومحيطها",
+      readMore: "اقرأ المقال الكامل ←",
+      backToEdu: "← العودة إلى صفحة البيئة",
+      map: { israel: "إسرائيل", sea: "البحر الأبيض المتوسط", redsea: "البحر الأحمر", lebanon: "لبنان", syria: "سوريا", jordan: "الأردن", egypt: "مصر", saudi: "السعودية", note: "موقعٌ تلتقي عنده ثلاث قارّات: إفريقيا وآسيا وأوروبا" },
+      c1t: "مناخ البحر المتوسط: لماذا هو مثاليّ للزواحف؟", c1d: "الصيف الطويل والشتاء المعتدل — لماذا يناسب هذا المناخ ذوات الدم البارد؟",
+      c2t: "موقع إسرائيل: جسرٌ بين ثلاث قارّات", c2d: "الدول المحيطة من كل جهة، ولماذا يجعل الموقع البلاد ملتقى طرق.",
+      c3t: "من أين جاءت زواحف إسرائيل؟", c3d: "أنواعٌ انحدرت من إفريقيا وآسيا وأوروبا والتقت في بقعةٍ صغيرة.",
+      c4t: "البحر المتوسط: بيئة حيّة نابضة", c4d: "كيف يصنع البحر مناخًا معتدلًا وبيئةً غنيّة بالحياة الزاحفية؟",
+      c5t: "إسرائيل بيت الزواحف الشرق أوسطية", c5d: "تنوّعٌ مذهل من الأفاعي والسحالي والسلاحف في مساحة صغيرة.",
+      c6t: "الغنى البيئي وسرّ البقاء", c6d: "بحرٌ وجبلٌ وصحراءٌ وغور — كيف يصنع هذا التنوّع بقاء الزواحف؟"
+    },
     articleIdentify: {
       breadcrumb: "تمييز الأفاعي",
       eyebrow: "تعريف وسلامة",
@@ -468,7 +501,7 @@ const I18N = {
 
   he: {
     dir: "rtl",
-    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"לכידות בפועל", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
+    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
     news: {
       breadcrumb: "חדשות",
       eyebrow: "העדכונים האחרונים",
@@ -758,6 +791,39 @@ const I18N = {
       s3b: "ואשר לאבקות ולחומרים «דוחי הנחשים» הנמכרים בהבטחות גדולות — התייחסו אליהם בזהירות רבה; רובם אינם מספקים הגנה אמינה, וחלקם עלולים להיות רעילים לחיות המחמד או לילדים שלכם. שום דבר אינו מחליף הסרת מזון ומחסה ואטימת פתחים — זו המניעה שבאמת עובדת.",
       close: "המטרה אינה שטח נקי לחלוטין מנחשים; זה אינו מציאותי ואף אינו בריא לטבע סביבנו. המטרה היא שביתכם וסביבתו הקרובה יהיו מקום לא מושך עבורם, כך שהנחש יחלוף מרחוק במקום להשתקע בקרבה. וכשאחד נכנס למרות הכול, זכרו את הצעד הקשה והחשוב ביותר: רוגע, ואז התקשרות ללוכד מוסמך."
     },
+    eco: {
+      hero: {"eyebrow": "אקולוגיית הזוחלים", "title": "ישראל: צומת דרכים של הזוחלים", "lead": "מיקום ייחודי בין שלוש יבשות ואקלים ים תיכוני הפכו את הפיסה הקטנה הזו לבית למגוון מדהים של זוחלים."},
+      map: {"title": "מפת ישראל וסביבתה", "sea": "הים התיכון", "israel": "ישראל", "lebanon": "לבנון", "syria": "סוריה", "jordan": "ירדן", "egypt": "מצרים", "redsea": "ים סוף", "caption": "ישראל היא גשר יבשתי צר המחבר את אפריקה לאסיה ולאירופה, גובל במים במערב, במדבר בדרום ובהרים בצפון."},
+      readMore: "קראו את הכתבה המלאה ←",
+      backToHub: "← חזרה לאקולוגיית הזוחלים",
+      c1t: "אקלים הים התיכון: מדוע הוא מושלם לזוחלים?",
+      c1d: "עונות מתונות ושמש בשפע יוצרות סביבה שבעלי הדם הקר חולמים עליה.",
+      c2t: "מיקומה של ישראל: גשר בין שלוש יבשות",
+      c2d: "המדינות הגובלות בה מכל עבר, ומדוע מיקומה הופך אותה לצומת של החיים.",
+      c3t: "מאין הגיעו זוחלי ישראל?",
+      c3d: "מינים שמוצאם באפריקה, באסיה ובאירופה נפגשים כולם בפיסה הזו.",
+      c4t: "הים התיכון: סביבה חיה ותוססת",
+      c4d: "החופים ובתי הגידול הים תיכוניים כסביבה עשירה השוקקת זוחלים.",
+      c5t: "ישראל: בית לזוחלי המזרח התיכון",
+      c5d: "מגוון גדול של נחשים, לטאות וצבים בשטח קטן.",
+      c6t: "העושר האקולוגי וסוד ההישרדות",
+      c6d: "ים, הר, מדבר ובקע — פסיפס בתי גידול שהוא מקור הקיום של הזוחלים."
+    },
+    edu: {
+      eyebrow: "סביבת הזוחלים",
+      title: "ישראל: מפגש יבשות ובית לזוחלים",
+      lead: "מיקום ייחודי בין הים, המדבר וההר הפך את הפיסה הקטנה הזו לאחת מסביבות הזוחלים העשירות במזרח התיכון. גלו מדוע בשש תחנות.",
+      mapTitle: "מפת המיקום: ישראל וסביבתה",
+      readMore: "קראו את הכתבה המלאה ←",
+      backToEdu: "← חזרה לעמוד הסביבה",
+      map: { israel: "ישראל", sea: "הים התיכון", redsea: "ים סוף", lebanon: "לבנון", syria: "סוריה", jordan: "ירדן", egypt: "מצרים", saudi: "סעודיה", note: "מיקום שבו נפגשות שלוש יבשות: אפריקה, אסיה ואירופה" },
+      c1t: "אקלים הים התיכון: מדוע הוא מושלם לזוחלים?", c1d: "קיץ ארוך וחורף מתון — מדוע אקלים זה מתאים לבעלי דם קר?",
+      c2t: "מיקום ישראל: גשר בין שלוש יבשות", c2d: "המדינות סביב מכל עבר, ומדוע המיקום הופך את הארץ למפגש דרכים.",
+      c3t: "מהיכן הגיעו זוחלי ישראל?", c3d: "מינים שמקורם באפריקה, אסיה ואירופה שנפגשו בפיסה קטנה.",
+      c4t: "הים התיכון: סביבה חיה ותוססת", c4d: "כיצד הים יוצר אקלים מתון וסביבה עשירה בחיי זוחלים?",
+      c5t: "ישראל בית לזוחלי המזרח התיכון", c5d: "מגוון מדהים של נחשים, לטאות וצבים בשטח קטן.",
+      c6t: "העושר הביולוגי וסוד ההישרדות", c6d: "ים, הר, מדבר ובקע — כיצד יוצר המגוון הזה את הישרדות הזוחלים?"
+    },
     articleIdentify: {
       breadcrumb: "זיהוי נחשים",
       eyebrow: "זיהוי ובטיחות",
@@ -928,7 +994,7 @@ const I18N = {
 
   en: {
     dir: "ltr",
-    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Live Hunting", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", privacy:"Privacy", about:"About", contact:"Contact" },
+    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", privacy:"Privacy", about:"About", contact:"Contact" },
     news: {
       breadcrumb: "News",
       eyebrow: "Latest Updates",
@@ -1217,6 +1283,39 @@ const I18N = {
       s3a: "Inspect the perimeter of your home for gaps and cracks a snake might slip through: under doors, around pipes, ventilation openings, and cracks in foundations and walls. Seal what you find; a snake needs a surprisingly small opening to pass through. Fitting a “brush” strip at the bottom of an exterior door is a simple and effective step.",
       s3b: "As for the powders and “snake-repellent” products sold with big promises, treat them with great caution; most offer no reliable protection, and some may be toxic to your pets or children. Nothing replaces removing food and shelter and sealing entrances — that is the prevention that actually works.",
       close: "The goal is not a plot of land completely free of snakes; that is neither realistic nor healthy for the nature around us. The goal is for your home and its immediate surroundings to be an unattractive place for them, so that a snake passes by at a distance instead of settling nearby. And when one does get in despite everything, remember the hardest and most important step: stay calm, then call a licensed catcher."
+    },
+    eco: {
+      hero: {"eyebrow": "Reptile Ecology", "title": "Israel: A Crossroads of Reptiles", "lead": "A unique location between three continents and a Mediterranean climate have made this small strip a home to a remarkable diversity of reptiles."},
+      map: {"title": "Map of Israel and Its Surroundings", "sea": "Mediterranean Sea", "israel": "Israel", "lebanon": "Lebanon", "syria": "Syria", "jordan": "Jordan", "egypt": "Egypt", "redsea": "Red Sea", "caption": "Israel is a narrow land bridge connecting Africa to Asia and Europe, bordered by water to the west, desert to the south, and mountains to the north."},
+      readMore: "Read the full article →",
+      backToHub: "← Back to Reptile Ecology",
+      c1t: "The Mediterranean Climate: Why Is It Perfect for Reptiles?",
+      c1d: "Mild seasons and abundant sun create an environment cold-blooded animals dream of.",
+      c2t: "Israel's Location: A Bridge Between Three Continents",
+      c2d: "The countries that surround it on every side, and why its location makes it a crossroads of life.",
+      c3t: "Where Did Israel's Reptiles Come From?",
+      c3d: "Species descended from Africa, Asia, and Europe all meet on this one strip.",
+      c4t: "The Mediterranean: A Living, Vibrant Environment",
+      c4d: "The coasts and Mediterranean habitats as a rich environment teeming with reptiles.",
+      c5t: "Israel: Home to the Reptiles of the Middle East",
+      c5d: "A great variety of snakes, lizards, and tortoises in a small area.",
+      c6t: "Ecological Richness and the Secret of Survival",
+      c6d: "Sea, mountain, desert, and rift — a mosaic of habitats that is the reptiles' source of survival."
+    },
+    edu: {
+      eyebrow: "The Reptile Environment",
+      title: "Israel: A Crossroads of Continents and a Home for Reptiles",
+      lead: "A unique location between sea, desert, and mountain made this small strip one of the richest reptile environments in the Middle East. Discover why, in six stops.",
+      mapTitle: "Location map: Israel and its surroundings",
+      readMore: "Read the full article →",
+      backToEdu: "← Back to the Environment page",
+      map: { israel: "Israel", sea: "Mediterranean Sea", redsea: "Red Sea", lebanon: "Lebanon", syria: "Syria", jordan: "Jordan", egypt: "Egypt", saudi: "Saudi Arabia", note: "A place where three continents meet: Africa, Asia, and Europe" },
+      c1t: "The Mediterranean Climate: Why Is It Ideal for Reptiles?", c1d: "A long summer and mild winter — why does this climate suit cold-blooded creatures?",
+      c2t: "Israel's Location: A Bridge Between Three Continents", c2d: "The neighboring countries on every side, and why the location makes the country a crossroads.",
+      c3t: "Where Did Israel's Reptiles Come From?", c3d: "Species descended from Africa, Asia, and Europe, meeting in a small strip.",
+      c4t: "The Mediterranean: A Living, Pulsing Environment", c4d: "How does the sea create a mild climate and an environment rich in reptile life?",
+      c5t: "Israel, Home of Middle Eastern Reptiles", c5d: "An astonishing diversity of snakes, lizards, and turtles in a small area.",
+      c6t: "Ecological Richness and the Secret of Survival", c6d: "Sea, mountain, desert, and rift — how does this diversity create reptile survival?"
     },
     articleIdentify: {
       breadcrumb: "Identifying Snakes",

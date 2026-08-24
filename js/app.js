@@ -146,6 +146,28 @@ function renderUnknown(lang){
   }).join('');
 }
 
+/* ---------- عرض مقال تعليمي عن البيئة ---------- */
+function renderEduArticle(lang){
+  const host = document.getElementById('edu-article');
+  if (!host || typeof eduArticles === 'undefined') return;
+  const slug = document.body.dataset.eduslug;
+  const art = eduArticles[slug] && eduArticles[slug][lang];
+  if (!art) return;
+  const ld=document.getElementById('ea-lead'); if(ld) ld.textContent=art.lead;
+  function paras(txt){ return String(txt||'').split(/\n\n+/).map(p=>p.trim()).filter(Boolean).map(p=>`<p class="reveal in">${escapeHtml(p)}</p>`).join(''); }
+  let html = paras(art.intro);
+  for (let i=1;i<=8;i++){
+    const t=art['s'+i+'title'], b=art['s'+i];
+    if(!t && !b) continue;
+    if(t) html += `<h2 class="reveal in">${escapeHtml(t)}</h2>`;
+    if(b) html += paras(b);
+  }
+  if(art.close){
+    html += `<div class="gear-warning reveal in"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2l9 4.5v6c0 5.2-3.8 8.6-9 9.5-5.2-.9-9-4.3-9-9.5v-6L12 2z" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5M12 16.2v.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div>${paras(art.close)}</div></div>`;
+  }
+  host.innerHTML = html;
+}
+
 /* ---------- عرض صفحة مقال نوع واحد ---------- */
 function renderSnakeArticle(lang){
   const host = document.getElementById('snake-article');
@@ -419,6 +441,7 @@ function renderPageContent(lang){
   renderUnknown(lang);
   renderStats(lang);
   renderSnakeArticle(lang);
+  renderEduArticle(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');
   renderSpeciesArticle(lang, 'safe-article', 'safe', 'articleSafe');
   renderAdventures(lang);
