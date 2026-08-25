@@ -146,6 +146,17 @@ function renderUnknown(lang){
   }).join('');
 }
 
+/* ---------- عرض الأسئلة الشائعة ---------- */
+function renderFaq(lang){
+  const host = document.getElementById('faq-list');
+  if (!host || typeof faqData === 'undefined') return;
+  host.innerHTML = faqData.map((item,i)=>`
+    <details class="faq-item reveal in"${i===0?' open':''}>
+      <summary>${escapeHtml(item.q[lang]||item.q.ar)}</summary>
+      <div class="faq-answer"><p>${escapeHtml(item.a[lang]||item.a.ar)}</p></div>
+    </details>`).join('');
+}
+
 /* ---------- عرض مقال تعليمي عن البيئة ---------- */
 function renderEduArticle(lang){
   const host = document.getElementById('edu-article');
@@ -442,6 +453,7 @@ function renderPageContent(lang){
   renderStats(lang);
   renderSnakeArticle(lang);
   renderEduArticle(lang);
+  renderFaq(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');
   renderSpeciesArticle(lang, 'safe-article', 'safe', 'articleSafe');
   renderAdventures(lang);

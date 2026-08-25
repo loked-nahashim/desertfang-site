@@ -8,7 +8,7 @@ const I18N = {
 
   ar: {
     dir: "rtl",
-    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
+    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", faq:"الأسئلة الشائعة", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
     news: {
       breadcrumb: "الأخبار",
       eyebrow: "آخر المستجدّات",
@@ -331,6 +331,8 @@ const I18N = {
       c5t: "إسرائيل بيت الزواحف الشرق أوسطية", c5d: "تنوّعٌ مذهل من الأفاعي والسحالي والسلاحف في مساحة صغيرة.",
       c6t: "الغنى البيئي وسرّ البقاء", c6d: "بحرٌ وجبلٌ وصحراءٌ وغور — كيف يصنع هذا التنوّع بقاء الزواحف؟"
     },
+    faqPage: { eyebrow: "معلومات تهمّك", title: "أسئلة شائعة عن الأفاعي", lead: "أكثر الأسئلة شيوعًا حول الأفاعي في إسرائيل: السلامة، والتعرّف، وماذا تفعل عند اللقاء أو اللدغة." },
+    related: { title: "اقرأ أيضًا" },
     articleIdentify: {
       breadcrumb: "تمييز الأفاعي",
       eyebrow: "تعريف وسلامة",
@@ -487,6 +489,12 @@ const I18N = {
       whatsappLabel: "واتساب",
       whatsappValue: "‎+972 52-264-2309",
       socialTitle: "تابعونا على وسائل التواصل",
+      hoursTitle: "أوقات الاستجابة",
+      hoursText: "نسعى للردّ على الرسائل عبر البريد والواتساب في أقرب وقتٍ ممكن، وعادةً خلال ساعات النهار. الواتساب هو أسرع وسيلة للوصول إلينا. قد يتأخّر الردّ ليلًا أو أثناء العمل الميداني، فنرجو تفهّمكم. أمّا في الحالات الطارئة — كوجود أفعى داخل البيت أو التعرّض للدغة — فلا تنتظروا الردّ، بل اتّصلوا مباشرةً بالطوارئ أو بجهة مرخّصة فورًا.",
+      areaTitle: "منطقة الخدمة",
+      areaText: "يقدّم مارون دانيال — صائد أفاعٍ مرخّص — خدمة نقل الأفاعي وإبعادها في مناطق شمال البلاد وما جاورها. وإن كنتم خارج نطاق الخدمة المباشرة، يسعدنا مع ذلك الإجابة عن أسئلتكم وإرشادكم إلى أقرب جهة مرخّصة في منطقتكم. أمّا هذا الموقع فهو مرجعٌ تعليميّ متاح للجميع في كل مكان وبثلاث لغات.",
+      reportTitle: "عند الإبلاغ عن مشاهدة أو طلب المساعدة",
+      reportText: "لتسريع المساعدة، حاولوا حين تتواصلون معنا أن تذكروا: موقعكم التقريبي، ووصف الأفعى إن أمكن (اللون، الطول التقريبي، النقش) دون الاقتراب منها، ومكان وجودها (حديقة، داخل البيت، مخزن…). صورةٌ ملتقطة من مسافة آمنة تساعد كثيرًا في التعرّف. ولا تحاولوا الإمساك بالأفعى أو قتلها؛ اتركوا لها مسافة وراقبوها من بعيد حتى وصول المساعدة.",
       note: "ملاحظة: عند العثور على ثعبان، تواصلوا مع جهة مرخّصة للتعامل معه ولا تحاولوا الإمساك به بأنفسكم."
     },
 
@@ -501,7 +509,7 @@ const I18N = {
 
   he: {
     dir: "rtl",
-    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
+    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", faq:"שאלות נפוצות", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
     news: {
       breadcrumb: "חדשות",
       eyebrow: "העדכונים האחרונים",
@@ -824,6 +832,8 @@ const I18N = {
       c5t: "ישראל בית לזוחלי המזרח התיכון", c5d: "מגוון מדהים של נחשים, לטאות וצבים בשטח קטן.",
       c6t: "העושר הביולוגי וסוד ההישרדות", c6d: "ים, הר, מדבר ובקע — כיצד יוצר המגוון הזה את הישרדות הזוחלים?"
     },
+    faqPage: { eyebrow: "מידע שחשוב לדעת", title: "שאלות נפוצות על נחשים", lead: "השאלות הנפוצות ביותר על נחשים בישראל: בטיחות, זיהוי, ומה לעשות במפגש או בהכשה." },
+    related: { title: "קראו גם" },
     articleIdentify: {
       breadcrumb: "זיהוי נחשים",
       eyebrow: "זיהוי ובטיחות",
@@ -980,6 +990,12 @@ const I18N = {
       whatsappLabel: "וואטסאפ",
       whatsappValue: "‎+972 52-264-2309",
       socialTitle: "עקבו אחרינו ברשתות",
+      hoursTitle: "זמני מענה",
+      hoursText: "אנו משתדלים להשיב להודעות בדוא\"ל ובוואטסאפ בהקדם האפשרי, לרוב במהלך שעות היום. וואטסאפ הוא הדרך המהירה ביותר להשיג אותנו. ייתכן עיכוב במענה בלילה או במהלך עבודת שטח, ואנו מודים לכם על ההבנה. במקרים דחופים — נחש בתוך הבית או הכשה — אל תמתינו למענה, אלא התקשרו מיד למוקד החירום או לגורם מורשה.",
+      areaTitle: "אזור השירות",
+      areaText: "מארון דניאל — לוכד נחשים מוסמך — מספק שירות פינוי והרחקת נחשים באזורי צפון הארץ והסביבה. אם אתם מחוץ לאזור השירות הישיר, נשמח בכל זאת לענות על שאלותיכם ולהפנות אתכם לגורם המורשה הקרוב אליכם. אתר זה עצמו הוא מקור לימודי הזמין לכולם בכל מקום ובשלוש שפות.",
+      reportTitle: "בעת דיווח על תצפית או בקשת עזרה",
+      reportText: "כדי לזרז את העזרה, נסו לציין כשאתם פונים אלינו: מיקומכם המשוער, תיאור הנחש אם ניתן (צבע, אורך משוער, דגם) מבלי להתקרב אליו, והיכן הוא נמצא (גינה, בתוך הבית, מחסן…). תמונה שצולמה ממרחק בטוח מסייעת מאוד בזיהוי. אל תנסו ללכוד את הנחש או להרוג אותו; תנו לו מרחק והשגיחו עליו מרחוק עד הגעת העזרה.",
       note: "הערה: אם מצאתם נחש, פנו לגורם מורשה לטיפול בו ואל תנסו ללכוד אותו בעצמכם."
     },
 
@@ -994,7 +1010,7 @@ const I18N = {
 
   en: {
     dir: "ltr",
-    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", privacy:"Privacy", about:"About", contact:"Contact" },
+    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", faq:"FAQ", privacy:"Privacy", about:"About", contact:"Contact" },
     news: {
       breadcrumb: "News",
       eyebrow: "Latest Updates",
@@ -1317,6 +1333,8 @@ const I18N = {
       c5t: "Israel, Home of Middle Eastern Reptiles", c5d: "An astonishing diversity of snakes, lizards, and turtles in a small area.",
       c6t: "Ecological Richness and the Secret of Survival", c6d: "Sea, mountain, desert, and rift — how does this diversity create reptile survival?"
     },
+    faqPage: { eyebrow: "Useful information", title: "Frequently Asked Questions About Snakes", lead: "The most common questions about snakes in Israel: safety, identification, and what to do in an encounter or bite." },
+    related: { title: "Read also" },
     articleIdentify: {
       breadcrumb: "Identifying Snakes",
       eyebrow: "Identification & Safety",
@@ -1473,6 +1491,12 @@ const I18N = {
       whatsappLabel: "WhatsApp",
       whatsappValue: "‎+972 52-264-2309",
       socialTitle: "Follow us on social media",
+      hoursTitle: "Response times",
+      hoursText: "We try to reply to messages by email and WhatsApp as soon as possible, usually during daytime hours. WhatsApp is the fastest way to reach us. Replies may be delayed at night or during field work, so we appreciate your understanding. In emergencies — a snake inside the house or a bite — do not wait for a reply; call emergency services or a licensed handler immediately.",
+      areaTitle: "Service area",
+      areaText: "Maroun Danial — a licensed snake catcher — provides snake relocation and removal services in the north of the country and nearby areas. If you are outside the direct service area, we are still glad to answer your questions and refer you to the nearest licensed handler in your region. This site itself is an educational resource available to everyone, everywhere, in three languages.",
+      reportTitle: "When reporting a sighting or requesting help",
+      reportText: "To speed up assistance, when you contact us try to mention: your approximate location, a description of the snake if possible (color, approximate length, pattern) without approaching it, and where it is (garden, inside the house, storeroom…). A photo taken from a safe distance helps a great deal with identification. Do not try to catch or kill the snake; give it space and watch it from a distance until help arrives.",
       note: "Note: If you find a snake, contact a licensed handler and do not try to catch it yourself."
     },
 
