@@ -1318,3 +1318,11 @@ html[dir="ltr"] .related-grid a::before{ content:"→ "; }
 .faq-item[open] summary::after{ content:"−"; }
 .faq-answer{ padding:0 22px 20px; }
 .faq-answer p{ margin:0; color:var(--muted); line-height:1.85; }
+
+/* ===== دليل الإسعاف: قوائم ===== */
+.fa-steps, .fa-donts{ margin:8px 0 24px; padding-inline-start:0; list-style:none; }
+.fa-steps li, .fa-donts li{ position:relative; padding:12px 16px 12px 52px; margin-bottom:10px; background:var(--card,#fff); border:1px solid rgba(20,14,8,.1); border-radius:12px; line-height:1.7; }
+html[dir="rtl"] .fa-steps li, html[dir="rtl"] .fa-donts li{ padding:12px 52px 12px 16px; }
+.fa-steps{ counter-reset:st; }
+.fa-steps li::before{ counter-increment:st; content:counter(st); position:absolute; inset-inline-start:14px; top:12px; width:26px; height:26px; background:var(--ember); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.85rem; }
+.fa-donts li::before{ content:"✕"; position:absolute; inset-inline-start:16px; top:12px; color:#C62828; font-weight:900; font-size:1.1rem; }
