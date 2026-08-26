@@ -394,7 +394,7 @@ const I18N = {
       close: "تذكّر دائمًا: هذا الدليل للتوعية وليس بديلًا عن الرعاية الطبية. عند أي لدغة، الأولوية المطلقة هي الاتصال بالطوارئ والوصول إلى المستشفى بأسرع وقت. الهدوء والمعرفة هما خطّ دفاعك الأول.",
     },
     seasonGuide: {
-      breadcrumb: "متى تنشط الأفاعي؟",
+      breadcrumb: "متى تنشط الأفاعي",
       eyebrow: "دليل موسميّ",
       title: "متى تنشط الأفاعي؟ دليل مواسم النشاط شهرًا بشهر",
       lead: "لماذا نرى الأفاعي في فصلٍ ونادرًا ما نلمحها في آخر؟ دليلٌ شامل لمواسم نشاط الأفاعي في إسرائيل على مدار السنة، وكيف تحمي نفسك في كل فصل.",
@@ -1584,7 +1584,7 @@ const I18N = {
       close: "Always remember: this guide is for awareness and is not a substitute for medical care. In any bite, the absolute priority is to call emergency services and reach hospital quickly. Calm and knowledge are your first line of defense.",
     },
     seasonGuide: {
-      breadcrumb: "When Are Snakes Active?",
+      breadcrumb: "When Are Snakes Active",
       eyebrow: "Seasonal Guide",
       title: "When Are Snakes Active? A Month-by-Month Guide to Their Seasons",
       lead: "Why do we see snakes in one season and barely glimpse them in another? A comprehensive guide to snake activity seasons in Israel throughout the year, and how to protect yourself in each season.",
