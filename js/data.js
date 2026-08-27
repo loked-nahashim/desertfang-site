@@ -63,7 +63,7 @@ const speciesData = [
     range:{ ar:"المناطق الرملية في شمال غرب النقب", he:"האזורים החוליים שבצפון-מערב הנגב", en:"Sandy areas of the northwestern Negev" } },
 
   { type:"venom", latin:"Pseudocerastes fieldi", img:"images/pseudocerastes-fieldi.jpg", imgArticle:"images/article-pseudocerastes-fieldi.jpg",
-    name:{ ar:"الأفعى المقرنة الصحراوية", he:"שפיפון", en:"Field's Horned Viper" },
+    name:{ ar:"الأفعى المقرنة الكاذبة", he:"שפיפון", en:"Field's Horned Viper" },
     desc:{
       ar:"أفعى سامة متكيّفة بشكل مميز للعيش في البيئات الصحراوية. تُعرف أيضًا بـ«الكوبرا الكاذبة» لأنها تنفخ رقبتها كحيلة دفاعية. الصغار تتغذى أساسًا على السحالي، بينما تعتمد البالغة أكثر على الفئران والطيور.",
       he:"נחש ארסי המותאם במיוחד לחיים במדבר. מכונה גם 'הקוברה המזויפת' כי הוא מנפח את צווארו כתחבולת הגנה. הצעירים ניזונים בעיקר מלטאות, ואילו הבוגרים ניזונים בעיקר מעכברים ומציפורים.",
@@ -240,7 +240,7 @@ const photosData = [
   { type:"venom", src:"images/cerastes-vipera.jpg", latin:"Cerastes vipera",
     caption:{ ar:"أفعى الرمال الصغيرة", he:"עכן קטן", en:"Avicenna's Sand Viper" } },
   { type:"venom", src:"images/pseudocerastes-fieldi.jpg", latin:"Pseudocerastes fieldi",
-    caption:{ ar:"الأفعى المقرنة الصحراوية", he:"שפיפון", en:"Field's Horned Viper" } },
+    caption:{ ar:"الأفعى المقرنة الكاذبة", he:"שפיפון", en:"Field's Horned Viper" } },
   { type:"venom", src:"images/echis-coloratus.jpg", latin:"Echis coloratus",
     caption:{ ar:"أفعى الحراشف المنشارية", he:"אפעה", en:"Saw-scaled Viper" } },
   { type:"venom", src:"images/atractaspis-engaddensis.jpg", latin:"Atractaspis engaddensis",
@@ -287,7 +287,7 @@ const videosData = [
     note:{ ar:"Walterinnesia aegyptia", he:"Walterinnesia aegyptia", en:"Walterinnesia aegyptia" } },
 
   { embed:"https://www.youtube.com/watch?v=Y-deWGtUjS4",
-    title:{ ar:"أفعى القرناء الكاذبة", he:"שפיפון", en:"Field's Horned Viper" },
+    title:{ ar:"الأفعى المقرنة الكاذبة", he:"שפיפון", en:"Field's Horned Viper" },
     note:{ ar:"Pseudocerastes fieldi", he:"Pseudocerastes fieldi", en:"Pseudocerastes fieldi" } },
 
   { embed:"https://www.youtube.com/watch?v=VV4ubDjXYiI",

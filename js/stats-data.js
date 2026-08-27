@@ -21,10 +21,10 @@ const statsData = {
     { name:{ ar:"الأفعى الفلسطينية", he:"צפע מצוי", en:"Palestine Viper" }, count:2404, pct:39.7 },
     { name:{ ar:"الكوبرا الصحراوية السوداء", he:"פתן שחור", en:"Black Desert Cobra" }, count:59, pct:1.0 },
     { name:{ ar:"الأفعى المنقّطة", he:"אפעה מגוון", en:"Painted Saw-scaled Viper" }, count:40, pct:0.7 },
-    { name:{ ar:"أفعى النقب المقرّنة", he:"שפיפון הנגב", en:"Negev Horned Viper" }, count:13, pct:0.2 },
+    { name:{ ar:"الأفعى المقرنة الكاذبة", he:"שפיפון הנגב", en:"Field's Horned Viper" }, count:13, pct:0.2 },
     { name:{ ar:"أفعى الجحور (عين جدي)", he:"שרף עין־גדי", en:"Ein Gedi Burrowing Asp" }, count:8, pct:0.1 },
-    { name:{ ar:"الأفعى القرناء الكاذبة", he:"עכן החרטומים", en:"False Horned Viper" }, count:5, pct:0.08 },
-    { name:{ ar:"الأفعى القرناء الصغيرة", he:"עכן קטן", en:"Small False-horned Viper" }, count:3, pct:0.05 },
+    { name:{ ar:"أفعى الرمال المقرنة", he:"עכן החרטומים", en:"Horned Viper" }, count:5, pct:0.08 },
+    { name:{ ar:"أفعى الرمال الصغيرة", he:"עכן קטן", en:"Avicenna's Sand Viper" }, count:3, pct:0.05 },
     { name:{ ar:"أفعى الحرمون (سجل شاذّ يحتاج تحقّقًا)", he:"צפע חרמון (רשומה חריגה)", en:"Hermon Viper (anomalous record)" }, count:1, pct:0.02 }
   ],
   months: [
