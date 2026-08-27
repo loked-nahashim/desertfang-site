@@ -306,60 +306,6 @@ function emptyStateHtml(title, text){
     </div>`;
 }
 
-/* لوحة "قيد الإنشاء" المصمّمة — تُعرض في مكتبة المغامرات قبل نشر أي رحلة */
-function underConstructionHtml(a, nav){
-  const btn = (href, label) => `<a href="${href}" class="btn btn-outline">${escapeHtml(label)}</a>`;
-  return `
-    <div class="under-construction reveal in">
-      <span class="uc-badge">${escapeHtml(a.ucBadge)}</span>
-      <div class="uc-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none">
-          <path d="M3 21h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          <path d="M14.7 6.3l3 3L9 18l-3.6.6L6 15l8.7-8.7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-          <path d="M13.3 7.7l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          <path d="M15.5 3.5l1.4-1.4a1.6 1.6 0 0 1 2.3 0l1.2 1.2a1.6 1.6 0 0 1 0 2.3l-1.4 1.4-3.5-3.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <h2>${escapeHtml(a.ucTitle)}</h2>
-      <p>${escapeHtml(a.ucText)}</p>
-      <div class="uc-cta">
-        <span class="uc-cta-label">${escapeHtml(a.ucCta)}</span>
-        <div class="uc-links">
-          ${btn('guide.html', nav.guide)}
-          ${btn('photos.html', nav.photos)}
-          ${btn('articles.html', nav.articles)}
-        </div>
-      </div>
-    </div>`;
-}
-
-/* ---------- عرض مغامراتي وصيدي ---------- */
-function renderAdventures(lang){
-  const el = document.getElementById('adventures-timeline');
-  if (!el) return;
-  const dict = I18N[lang] || I18N[I18N_DEFAULT_LANG];
-  const real = adventuresData.filter(a => !isPlaceholder(a.title && a.title[lang]));
-
-  /* ملاحظة المطوّر (كيفية إضافة مغامرة) نخفيها في وضع "قيد الإنشاء" ليبدو للزائر متقنًا */
-  const devNote = el.parentElement ? el.parentElement.querySelector('.notice') : null;
-
-  if (!real.length){
-    el.classList.remove('timeline');
-    el.innerHTML = underConstructionHtml(dict.adventures, dict.nav);
-    if (devNote) devNote.style.display = 'none';
-    return;
-  }
-  if (devNote) devNote.style.display = '';
-  el.classList.add('timeline');
-  el.innerHTML = real.map(a => `
-    <div class="timeline-item reveal in">
-      <span class="date">${escapeHtml(a.date[lang])}</span>
-      <h3>${escapeHtml(a.title[lang])}</h3>
-      <p>${escapeHtml(a.text[lang])}</p>
-      <span class="loc">📍 ${escapeHtml(a.loc[lang])}</span>
-    </div>`).join('');
-}
-
 /* ---------- عرض مكتبة الصور ---------- */
 function renderPhotos(lang){
   const venomGrid = document.getElementById('photos-grid-venom');
@@ -456,7 +402,6 @@ function renderPageContent(lang){
   renderFaq(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');
   renderSpeciesArticle(lang, 'safe-article', 'safe', 'articleSafe');
-  renderAdventures(lang);
   renderPhotos(lang);
   renderVideos(lang);
   renderArticles(lang);

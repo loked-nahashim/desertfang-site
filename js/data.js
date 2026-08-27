@@ -226,25 +226,7 @@ const speciesData = [
 
 ];
 
-/* ---------- 2) مغامراتي وصيدي: أضف مغامرة جديدة هنا ---------- */
-const adventuresData = [
-  { date:{ ar:"[أضف التاريخ]", he:"[הוסף תאריך]", en:"[Add date]" },
-    title:{ ar:"[عنوان المغامرة — مثال: مواجهة أفعى فلسطين عند الفجر]", he:"[כותרת ההרפתקה — לדוגמה: מפגש עם צפע ארץ ישראלי עם שחר]", en:"[Adventure title — e.g. Encountering a Palestine Viper at Dawn]" },
-    text:{ ar:"[اكتب هنا قصة الرحلة: كيف بدأت، أين بحثت، وما الذي وجدته.]", he:"[כתבו כאן את סיפור המסע: איך התחיל, איפה חיפשתם, ומה מצאתם.]", en:"[Write the trip's story here: how it started, where you searched, and what you found.]" },
-    loc:{ ar:"[الموقع الجغرافي]", he:"[מיקום גיאוגרפי]", en:"[Location]" } },
-
-  { date:{ ar:"[أضف التاريخ]", he:"[הוסף תאריך]", en:"[Add date]" },
-    title:{ ar:"[عنوان المغامرة الثانية]", he:"[כותרת ההרפתקה השנייה]", en:"[Second adventure title]" },
-    text:{ ar:"[استبدل هذا النص بتفاصيل رحلتك، والنوع الذي رصدته.]", he:"[החליפו טקסט זה בפרטי המסע שלכם, והמין שאיתרתם.]", en:"[Replace this text with your trip's details and the species you spotted.]" },
-    loc:{ ar:"[الموقع الجغرافي]", he:"[מיקום גיאוגרפי]", en:"[Location]" } },
-
-  { date:{ ar:"[أضف التاريخ]", he:"[הוסף תאריך]", en:"[Add date]" },
-    title:{ ar:"[عنوان المغامرة الثالثة]", he:"[כותרת ההרפתקה השלישית]", en:"[Third adventure title]" },
-    text:{ ar:"[استمر بإضافة مغامراتك هنا بنفس النمط.]", he:"[המשיכו להוסיף את ההרפתקאות שלכם באותו סגנון.]", en:"[Keep adding your adventures here in the same format.]" },
-    loc:{ ar:"[الموقع الجغرافي]", he:"[מיקום גיאוגרפי]", en:"[Location]" } }
-];
-
-/* ---------- 3) مكتبة الصور: أضف صورة جديدة هنا ----------
+/* ---------- 2) مكتبة الصور: أضف صورة جديدة هنا ----------
    لعرض صورة حقيقية بدل المربع المؤقت، أضف الحقل "src": "images/اسمالملف.jpg" */
 const photosData = [
   { type:"venom", src:"images/daboia-palaestinae.jpg", latin:"Daboia palaestinae",
@@ -292,7 +274,7 @@ const photosData = [
 
 ];
 
-/* ---------- 4) مكتبة الفيديوهات: أضف فيديو جديد هنا ----------
+/* ---------- 3) مكتبة الفيديوهات: أضف فيديو جديد هنا ----------
    الصق رابط يوتيوب العادي في الحقل "embed" (watch أو youtu.be أو Shorts)،
    وستظهر الصورة المصغّرة تلقائيًا ويُشغّل الفيديو داخل الموقع عند النقر. */
 const videosData = [
@@ -333,7 +315,7 @@ const videosData = [
     note:{ ar:"Daboia palaestinae", he:"Daboia palaestinae", en:"Daboia palaestinae" } }
 ];
 
-/* ---------- 5) مكتبة المقالات: أضف مقالًا جديدًا هنا ---------- */
+/* ---------- 4) مكتبة المقالات: أضف مقالًا جديدًا هنا ---------- */
 const articlesData = [
   { tag:{ ar:"دليل عملي", he:"מדריך מעשי", en:"Practical Guide" },
     href:"article-snake-in-house.html",

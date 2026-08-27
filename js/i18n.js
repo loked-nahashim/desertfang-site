@@ -53,7 +53,7 @@ const I18N = {
       videoEyebrow: "من الميدان",
       videoTitle: "مقاطع فيديو مختارة",
       videoCta: "شاهد كل الفيديوهات ←",
-      lib1Title: "الصيد الفعلي", lib1Desc: "يوميات ميدانية من رحلات الصيد: المكان، النوع الذي عثرت عليه، وقصة كل مواجهة.",
+      lib1Title: "بيئة الزواحف", lib1Desc: "لماذا تُعدّ إسرائيل من أغنى بيئات الزواحف في الشرق الأوسط؟ اكتشف ذلك في ستّ محطّات تعليمية.",
       lib2Title: "مكتبة الصور", lib2Desc: "لقطات ميدانية حصرية للأنواع التي وثّقتها، من قرب وفي بيئتها الطبيعية.",
       lib3Title: "مكتبة الفيديوهات", lib3Desc: "مقاطع من الميدان: طرق التعرف، أساليب التعامل الآمن، ولحظات المطاردة والتوثيق.",
       lib4Title: "مكتبة المقالات", lib4Desc: "مقالات معمّقة عن سلوك الأفاعي، الإسعافات الأولية، والسلامة أثناء الصيد الميداني.",
@@ -110,21 +110,6 @@ const I18N = {
       monthsLead: "لا تتوزّع الحالات بالتساوي على مدار السنة: ذروة واضحة في الربيع وأوائل الصيف (مايو ويونيو)، وارتفاع ثانٍ في الخريف (سبتمبر وأكتوبر)، وأدنى المستويات في أشهر الشتاء. (الأشهر المعروضة هي التي فصّلها المصدر.)",
       venomTag: "سامة",
       disclaimer: "ملاحظة: تعكس هذه الأرقام حالات اصطياد مبلّغ عنها فقط، ولا تمثّل قياسًا مباشرًا لأعداد الأفاعي أو نشاطها في الطبيعة."
-    },
-
-    adventures: {
-      breadcrumb: "مغامراتي وصيدي",
-      eyebrow: "يوميات ميدانية",
-      title: "مغامراتي في صيد الأفاعي",
-      lead: "كل خرجة ميدانية لها قصتها: المكان، الوقت، النوع الذي عثرت عليه، وما تعلمته من المواجهة. هنا أوثّق رحلاتي بالترتيب الزمني، وسأضيف مغامرة جديدة بعد كل خرجة.",
-      noticeStrong: "هذه المكتبة قابلة للتوسّع دائمًا:",
-      noticeText: "أضف مغامرة جديدة بإضافة عنصر واحد إلى مصفوفة adventuresData في ملف js/data.js — لا حاجة لأي تعديل في HTML.",
-      emptyTitle: "قريبًا: أولى المغامرات الميدانية",
-      emptyText: "لم تُنشر أي مغامرة بعد. ترقّبوا أولى يوميات الصيد — قصص من الميدان بالمكان والتاريخ والنوع الذي عُثر عليه.",
-      ucBadge: "قيد الإنشاء",
-      ucTitle: "مكتبة المغامرات قيد الإنشاء",
-      ucText: "أعمل حاليًا على توثيق رحلاتي الميدانية وترتيبها قبل نشرها هنا. عُد قريبًا لتقرأ يوميات الصيد كاملةً: المكان، التاريخ، والنوع الذي عُثر عليه في كل خرجة.",
-      ucCta: "بينما ننتهي، تصفّح باقي الموقع:"
     },
 
     photos: {
@@ -648,7 +633,7 @@ const I18N = {
       videoEyebrow: "מהשטח",
       videoTitle: "סרטונים נבחרים",
       videoCta: "לכל הסרטונים ←",
-      lib1Title: "לכידות בפועל", lib1Desc: "יומן שטח מרחבי ציד: המקום, המין שנמצא, וסיפור כל מפגש.",
+      lib1Title: "סביבת הזוחלים", lib1Desc: "מדוע ישראל היא אחת מסביבות הזוחלים העשירות במזרח התיכון? גלו זאת בשש תחנות לימודיות.",
       lib2Title: "גלריית תמונות", lib2Desc: "תמונות שטח בלעדיות של המינים שתיעדתי, מקרוב ובבית הגידול הטבעי שלהם.",
       lib3Title: "גלריית וידאו", lib3Desc: "קטעים מהשטח: דרכי זיהוי, שיטות התמודדות בטוחות, ורגעי מעקב ותיעוד.",
       lib4Title: "ספריית מאמרים", lib4Desc: "מאמרים מעמיקים על התנהגות נחשים, עזרה ראשונה, ובטיחות בזמן ציד שטח.",
@@ -707,20 +692,6 @@ const I18N = {
       disclaimer: "הערה: הנתונים משקפים אירועי לכידה מדווחים בלבד, ואינם מדידה ישירה של גודל אוכלוסיות הנחשים או פעילותן בטבע."
     },
 
-    adventures: {
-      breadcrumb: "ההרפתקאות שלי",
-      eyebrow: "יומן שטח",
-      title: "ההרפתקאות שלי בציד נחשים",
-      lead: "לכל יציאת שטח יש סיפור משלה: המקום, הזמן, המין שנמצא, ומה שלמדתי מהמפגש. כאן אני מתעד את המסעות שלי בסדר כרונולוגי, ואוסיף הרפתקה חדשה אחרי כל יציאה.",
-      noticeStrong: "ספרייה זו ניתנת להרחבה תמיד:",
-      noticeText: "הוסיפו הרפתקה חדשה על ידי הוספת פריט אחד למערך adventuresData בקובץ js/data.js — אין צורך בשום שינוי ב-HTML.",
-      emptyTitle: "בקרוב: ההרפתקאות הראשונות",
-      emptyText: "טרם פורסמה הרפתקת שטח. עקבו אחרי יומני הציד הראשונים — סיפורים מהשטח עם המקום, התאריך והמין שנמצא.",
-      ucBadge: "בבנייה",
-      ucTitle: "ספריית ההרפתקאות בבנייה",
-      ucText: "אני עוסק כעת בתיעוד מסעות השטח שלי ובסידורם לפני הפרסום כאן. חזרו בקרוב כדי לקרוא את יומני הציד המלאים: המקום, התאריך והמין שנמצא בכל יציאה.",
-      ucCta: "בינתיים, עיינו בשאר האתר:"
-    },
 
     photos: {
       breadcrumb: "גלריית תמונות",
@@ -1243,7 +1214,7 @@ const I18N = {
       videoEyebrow: "From the Field",
       videoTitle: "Selected Videos",
       videoCta: "Watch all videos →",
-      lib1Title: "Live Hunting", lib1Desc: "Field diaries from hunting trips: the place, the species found, and the story of every encounter.",
+      lib1Title: "Reptile Environment", lib1Desc: "Why is Israel one of the richest reptile environments in the Middle East? Discover why in six educational stops.",
       lib2Title: "Photo Gallery", lib2Desc: "Exclusive field shots of the species I've documented, up close in their natural habitat.",
       lib3Title: "Video Gallery", lib3Desc: "Clips from the field: identification methods, safe handling techniques, and moments of tracking and documentation.",
       lib4Title: "Article Library", lib4Desc: "In-depth articles on snake behavior, first aid, and safety during field hunting.",
@@ -1302,20 +1273,6 @@ const I18N = {
       disclaimer: "Note: these figures reflect reported capture events only, and are not a direct measurement of snake population sizes or their activity in the wild."
     },
 
-    adventures: {
-      breadcrumb: "My Adventures",
-      eyebrow: "Field diary",
-      title: "My Snake-Hunting Adventures",
-      lead: "Every field trip has its own story: the place, the time, the species found, and what I learned from the encounter. Here I log my trips in chronological order, adding a new adventure after every outing.",
-      noticeStrong: "This library is always expandable:",
-      noticeText: "Add a new adventure by adding one item to the adventuresData array in js/data.js — no HTML editing required.",
-      emptyTitle: "Coming soon: the first field adventures",
-      emptyText: "No adventures have been published yet. The first hunting logs are on the way — stories from the field with the place, date, and species found.",
-      ucBadge: "Under construction",
-      ucTitle: "The adventures library is under construction",
-      ucText: "I'm currently documenting and organizing my field trips before publishing them here. Check back soon to read the full hunting logs: the place, date, and species found on each outing.",
-      ucCta: "Meanwhile, explore the rest of the site:"
-    },
 
     photos: {
       breadcrumb: "Photo Gallery",
