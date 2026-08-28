@@ -126,7 +126,7 @@ function renderUnknown(lang){
 
   grid.innerHTML = unknownData.map(sp => {
     const photo = sp.img
-      ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}">`
+      ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}" loading="lazy" decoding="async">`
       : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
     return `
       <div class="species-card reveal in" data-type="safe">
@@ -223,7 +223,7 @@ function renderSpecies(lang){
     const badgeClass = sp.type === 'venom' ? 'badge-venom' : 'badge-safe';
     const badgeText = sp.type === 'venom' ? g.badgeVenom : g.badgeSafe;
     const photo = sp.img
-      ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}">`
+      ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}" loading="lazy" decoding="async">`
       : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
     const slug = (sp.latin || '').toLowerCase().replace(/ /g, '-');
     const hasArticle = (typeof speciesArticles !== 'undefined') && speciesArticles[slug];
@@ -269,7 +269,7 @@ function renderSpeciesArticle(lang, containerId, type, dictKey){
   const sections = speciesData.filter(s => s.type === type).map((sp, i) => `
     <article class="article-species reveal in">
       <div class="article-species-media">
-        <img src="${escapeHtml(sp.imgArticle || sp.img)}" alt="${escapeHtml(sp.name[lang])}">
+        <img src="${escapeHtml(sp.imgArticle || sp.img)}" alt="${escapeHtml(sp.name[lang])}" loading="lazy" decoding="async">
       </div>
       <div class="article-species-body">
         <span class="article-species-num">${String(i+1).padStart(2,'0')}</span>
@@ -314,7 +314,7 @@ function renderPhotos(lang){
 
   function tileHtml(p){
     if (p.src){
-      return `<div class="media-tile has-photo reveal in" data-full="${escapeHtml(p.src)}" data-caption="${escapeHtml(p.caption[lang])}" data-latin="${escapeHtml(p.latin || '')}"><img src="${escapeHtml(p.src)}" alt="${escapeHtml(p.caption[lang])}"></div>`;
+      return `<div class="media-tile has-photo reveal in" data-full="${escapeHtml(p.src)}" data-caption="${escapeHtml(p.caption[lang])}" data-latin="${escapeHtml(p.latin || '')}"><img src="${escapeHtml(p.src)}" alt="${escapeHtml(p.caption[lang])}" loading="lazy" decoding="async"></div>`;
     }
     return `<div class="media-tile reveal in">${escapeHtml(p.caption[lang])}<br>[${escapeHtml(I18N[lang].guide.photoSoon)}]</div>`;
   }
