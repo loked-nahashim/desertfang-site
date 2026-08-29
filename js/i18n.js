@@ -37,6 +37,16 @@ const I18N = {
       detailTitlePrefix: "أفاعي",
       noticeText: "تصنيف الأنواع حسب المناطق يعتمد على بيانات التوزّع الجغرافي الموثقة لكل نوع في دليل الأفاعي، وقد يتداخل انتشار بعض الأنواع بين أكثر من منطقة."
     },
+    sitemap: {
+      breadcrumb: "خارطة الموقع",
+      eyebrow: "دليل تصفح",
+      title: "خارطة الموقع",
+      lead: "كل صفحات موقع ناب الصحراء في مكان واحد — الدليل، المناطق الجغرافية، المقالات، والمزيد، لتسهيل الوصول لما تبحث عنه.",
+      sectionMain: "الصفحات الرئيسية",
+      sectionSpecies: "الأنواع الموثقة (21 نوعًا)",
+      sectionRegions: "المناطق الجغرافية",
+      sectionArticles: "المقالات"
+    },
 
     home: {
       eyebrow: "دليل ميداني • 21 نوعًا موثقًا في إسرائيل",
@@ -70,6 +80,7 @@ const I18N = {
       lib3Title: "مكتبة الفيديوهات", lib3Desc: "مقاطع من الميدان: طرق التعرف، أساليب التعامل الآمن، ولحظات المطاردة والتوثيق.",
       lib4Title: "مكتبة المقالات", lib4Desc: "مقالات معمّقة عن سلوك الأفاعي، الإسعافات الأولية، والسلامة أثناء الصيد الميداني.",
       lib5Title: "مكتبة الأفاعي الغير معروفة في إسرائيل", lib5Desc: "أنواع نادرة وغير مألوفة من أفاعي إسرائيل في خطر الانقراض.", libSoon: "قريبًا",
+      lib6Title: "أفاعي إسرائيل حسب المنطقة الجغرافية", lib6Desc: "اكتشفوا أي الأنواع تعيش في النقب والعربة والبحر الميت والجليل ووسط البلاد.",
       libGo: "افتح المكتبة ←",
       bigVideosTitle: "مكتبة الفيديوهات",
       bigChannelTitle: "قناتي على اليوتيوب",
@@ -629,6 +640,16 @@ const I18N = {
       detailTitlePrefix: "נחשי",
       noticeText: "שיוך המינים לאזורים מבוסס על נתוני התפוצה הגיאוגרפית המתועדים לכל מין במדריך הנחשים, וייתכן שתפוצתם של חלק מהמינים חופפת בין כמה אזורים."
     },
+    sitemap: {
+      breadcrumb: "מפת האתר",
+      eyebrow: "מדריך ניווט",
+      title: "מפת האתר",
+      lead: "כל דפי אתר ניב המדבר במקום אחד — המדריך, האזורים הגיאוגרפיים, המאמרים ועוד, כדי להקל עליכם למצוא את מה שאתם מחפשים.",
+      sectionMain: "הדפים המרכזיים",
+      sectionSpecies: "המינים המתועדים (21)",
+      sectionRegions: "אזורים גיאוגרפיים",
+      sectionArticles: "מאמרים"
+    },
 
     home: {
       eyebrow: "מדריך שטח • 21 מינים מתועדים בישראל",
@@ -662,6 +683,7 @@ const I18N = {
       lib3Title: "גלריית וידאו", lib3Desc: "קטעים מהשטח: דרכי זיהוי, שיטות התמודדות בטוחות, ורגעי מעקב ותיעוד.",
       lib4Title: "ספריית מאמרים", lib4Desc: "מאמרים מעמיקים על התנהגות נחשים, עזרה ראשונה, ובטיחות בזמן ציד שטח.",
       lib5Title: "ספריית הנחשים הלא-מוכרים בישראל", lib5Desc: "מינים נדירים ולא מוכרים של נחשי ישראל בסכנת הכחדה.", libSoon: "בקרוב",
+      lib6Title: "נחשי ישראל לפי אזור גיאוגרפי", lib6Desc: "גלו אילו מינים חיים בנגב, בערבה, בים המלח, בגליל ובמרכז הארץ.",
       libGo: "פתח את הספרייה ←",
       bigVideosTitle: "ספריית הווידאו",
       bigChannelTitle: "ערוץ היוטיוב שלי",
@@ -1222,6 +1244,16 @@ const I18N = {
       detailTitlePrefix: "Snakes of",
       noticeText: "Species are assigned to regions based on the documented geographic range of each species in the snake guide, and some species' ranges overlap across more than one region."
     },
+    sitemap: {
+      breadcrumb: "Site Map",
+      eyebrow: "Navigation guide",
+      title: "Site Map",
+      lead: "Every page of the Desert Fang site in one place — the guide, geographic regions, articles, and more, to help you find what you're looking for.",
+      sectionMain: "Main Pages",
+      sectionSpecies: "Documented Species (21)",
+      sectionRegions: "Geographic Regions",
+      sectionArticles: "Articles"
+    },
 
     home: {
       eyebrow: "Field guide • 21 documented species in Israel",
@@ -1255,6 +1287,7 @@ const I18N = {
       lib3Title: "Video Gallery", lib3Desc: "Clips from the field: identification methods, safe handling techniques, and moments of tracking and documentation.",
       lib4Title: "Article Library", lib4Desc: "In-depth articles on snake behavior, first aid, and safety during field hunting.",
       lib5Title: "Library of Unknown Snakes in Israel", lib5Desc: "Rare and unfamiliar snakes of Israel that are in danger of extinction.", libSoon: "Coming soon",
+      lib6Title: "Israel's Snakes by Region", lib6Desc: "Discover which species live in the Negev, the Arava, the Dead Sea, the Galilee, and central Israel.",
       libGo: "Open the library →",
       bigVideosTitle: "Video Library",
       bigChannelTitle: "My YouTube Channel",

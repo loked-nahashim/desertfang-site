@@ -447,6 +447,27 @@ function renderRegionDetail(lang){
   grid.innerHTML = list.map(sp => regionSpeciesCardHtml(sp, lang, g)).join('');
 }
 
+/* ---------- عرض روابط خارطة الموقع ---------- */
+function renderSitemapLinks(lang){
+  const speciesHost = document.getElementById('sitemap-species-links');
+  const regionsHost = document.getElementById('sitemap-region-links');
+  const articlesHost = document.getElementById('sitemap-article-links');
+  if (!speciesHost && !regionsHost && !articlesHost) return;
+
+  if (speciesHost && typeof speciesData !== 'undefined'){
+    speciesHost.innerHTML = speciesData.map(sp => {
+      const slug = (sp.latin || '').toLowerCase().replace(/ /g, '-');
+      return `<a href="snake-${slug}.html">${escapeHtml(sp.name[lang])}</a>`;
+    }).join('');
+  }
+  if (regionsHost && typeof regionsData !== 'undefined'){
+    regionsHost.innerHTML = regionsData.map(r => `<a href="region-${r.slug}.html">${escapeHtml(r.name[lang])}</a>`).join('');
+  }
+  if (articlesHost && typeof articlesData !== 'undefined'){
+    articlesHost.innerHTML = articlesData.map(a => `<a href="${a.href || '#'}">${escapeHtml(a.title[lang])}</a>`).join('');
+  }
+}
+
 /* ---------- عرض مكتبة المقالات ---------- */
 function renderArticles(lang){
   const el = document.getElementById('articles-list');
@@ -477,6 +498,7 @@ function renderPageContent(lang){
   renderArticles(lang);
   renderRegionsHub(lang);
   renderRegionDetail(lang);
+  renderSitemapLinks(lang);
 }
 
 /* ---------- تهيئة عامة ---------- */
