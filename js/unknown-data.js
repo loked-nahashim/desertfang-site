@@ -109,7 +109,7 @@ const unknownData = [
     range:{ ar:"وسط وجنوب النقب وسيناء", he:"מרכז ודרום הנגב וסיני", en:"Central and southern Negev and Sinai" } },
 
   { latin:"Rhynchocalamus melanocephalus", img:"images/unk-13-rhynchocalamus-melanocephalus.jpg",
-    name:{ ar:"الثعبان أسود الرأس الفلسطيني", he:"שחור־ראש", en:"Palestine Black-headed Snake" },
+    name:{ ar:"ثعبان أسود الرأس", he:"שחור־ראש", en:"Palestine Black-headed Snake" },
     desc:{ ar:"ثعبان صغير غير سام، يسهل تمييزه برأسه الأسود.",
            he:"נחש קטן ולא ארסי, שקל לזהותו בזכות ראשו השחור.",
            en:"A small, non-venomous snake, easily recognized by its black head." },

@@ -128,8 +128,9 @@ function renderUnknown(lang){
     const photo = sp.img
       ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}" loading="lazy" decoding="async">`
       : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
-    return `
-      <div class="species-card reveal in" data-type="safe">
+    const slug = (sp.latin || '').toLowerCase().replace(/ /g, '-');
+    const hasArticle = (typeof unknownSpeciesArticles !== 'undefined') && unknownSpeciesArticles[slug];
+    const cardInner = `
         <div class="species-photo">${photo}<span class="species-badge badge-safe">${escapeHtml(g.badgeSafe)}</span></div>
         <div class="species-body">
           <div class="species-top">
@@ -141,9 +142,45 @@ function renderUnknown(lang){
             <span>${escapeHtml(g.dietLabel)}: <strong>${escapeHtml(sp.diet[lang])}</strong></span>
             <span>${escapeHtml(g.rangeLabel)}: <strong>${escapeHtml(sp.range[lang])}</strong></span>
           </div>
-        </div>
-      </div>`;
+          ${hasArticle ? `<span class="species-readmore">${escapeHtml((g.readMore || 'اقرأ المقال الكامل ←'))}</span>` : ''}
+        </div>`;
+    if (hasArticle){
+      return `<a href="unknown-${slug}.html" class="species-card species-card-link reveal in" data-type="safe">${cardInner}</a>`;
+    }
+    return `<div class="species-card reveal in" data-type="safe">${cardInner}</div>`;
   }).join('');
+}
+
+/* ---------- عرض صفحة مقال نوع من الأفاعي الغير معروفة ---------- */
+function renderUnknownArticle(lang){
+  const host = document.getElementById('unknown-article');
+  if (!host || typeof unknownSpeciesArticles === 'undefined' || typeof unknownData === 'undefined') return;
+  const slug = document.body.dataset.unknownSlug;
+  const sp = unknownData.find(s => (s.latin||'').toLowerCase().replace(/ /g,'-') === slug);
+  const art = unknownSpeciesArticles[slug] && unknownSpeciesArticles[slug][lang];
+  if (!sp || !art) return;
+  const g = I18N[lang].guide;
+  const nm=document.getElementById('sa-name'); if(nm) nm.textContent=sp.name[lang];
+  const lt=document.getElementById('sa-latin'); if(lt) lt.textContent=sp.latin;
+  const ld=document.getElementById('sa-lead'); if(ld) ld.textContent=art.lead;
+  function paras(txt){ return String(txt||'').split(/\n\n+/).map(p=>p.trim()).filter(Boolean).map(p=>`<p class="reveal in">${escapeHtml(p)}</p>`).join(''); }
+  const dBadge = `<div class="danger-badge danger-safe reveal in">${escapeHtml(g.badgeSafe)}</div>`;
+  let html = dBadge + paras(art.intro);
+  html += `<ul class="article-facts snake-facts reveal in">
+      <li><b>${escapeHtml(g.lengthLabel)}</b><span>${escapeHtml(sp.length[lang])}</span></li>
+      ${sp.diet?`<li><b>${escapeHtml(g.dietLabel)}</b><span>${escapeHtml(sp.diet[lang])}</span></li>`:''}
+      <li><b>${escapeHtml(g.rangeLabel)}</b><span>${escapeHtml(sp.range[lang])}</span></li>
+    </ul>`;
+  for (let i=1;i<=8;i++){
+    const t=art['s'+i+'title'], b=art['s'+i];
+    if(!t && !b) continue;
+    if(t) html += `<h2 class="reveal in">${escapeHtml(t)}</h2>`;
+    if(b) html += paras(b);
+  }
+  if(art.close){
+    html += `<div class="gear-warning reveal in"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2l9 4.5v6c0 5.2-3.8 8.6-9 9.5-5.2-.9-9-4.3-9-9.5v-6L12 2z" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5M12 16.2v.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div>${paras(art.close)}</div></div>`;
+  }
+  host.innerHTML = html;
 }
 
 /* ---------- عرض الأسئلة الشائعة ---------- */
@@ -378,14 +415,19 @@ function renderVideos(lang){
 }
 
 /* ---------- عرض صفحات المناطق الجغرافية ---------- */
-function regionSpeciesCardHtml(sp, lang, g){
-  const badgeClass = sp.type === 'venom' ? 'badge-venom' : 'badge-safe';
-  const badgeText = sp.type === 'venom' ? g.badgeVenom : g.badgeSafe;
+function regionSpeciesCardHtml(sp, lang, g, isUnknown){
+  const type = isUnknown ? 'safe' : sp.type;
+  const badgeClass = type === 'venom' ? 'badge-venom' : 'badge-safe';
+  const badgeText = type === 'venom' ? g.badgeVenom : g.badgeSafe;
   const photo = sp.img
     ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}" loading="lazy" decoding="async">`
     : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
   const slug = (sp.latin || '').toLowerCase().replace(/ /g, '-');
-  const hasArticle = (typeof speciesArticles !== 'undefined') && speciesArticles[slug];
+  const articlesStore = isUnknown
+    ? ((typeof unknownSpeciesArticles !== 'undefined') && unknownSpeciesArticles)
+    : ((typeof speciesArticles !== 'undefined') && speciesArticles);
+  const hasArticle = articlesStore && articlesStore[slug];
+  const href = isUnknown ? `unknown-${slug}.html` : `snake-${slug}.html`;
   const cardInner = `
       <div class="species-photo">${photo}<span class="species-badge ${badgeClass}">${escapeHtml(badgeText)}</span></div>
       <div class="species-body">
@@ -401,9 +443,9 @@ function regionSpeciesCardHtml(sp, lang, g){
         ${hasArticle ? `<span class="species-readmore">${escapeHtml((g.readMore || 'اقرأ المقال الكامل ←'))}</span>` : ''}
       </div>`;
   if (hasArticle){
-    return `<a href="snake-${slug}.html" class="species-card species-card-link reveal in" data-type="${sp.type}">${cardInner}</a>`;
+    return `<a href="${href}" class="species-card species-card-link reveal in" data-type="${type}">${cardInner}</a>`;
   }
-  return `<div class="species-card reveal in" data-type="${sp.type}">${cardInner}</div>`;
+  return `<div class="species-card reveal in" data-type="${type}">${cardInner}</div>`;
 }
 
 function renderRegionsHub(lang){
@@ -411,10 +453,12 @@ function renderRegionsHub(lang){
   if (!grid || typeof regionsData === 'undefined') return;
   const dict = I18N[lang] || I18N[I18N_DEFAULT_LANG];
   const rg = dict.regions;
+  const hasUnknown = typeof unknownData !== 'undefined';
   grid.innerHTML = regionsData.map(r => {
     const list = speciesData.filter(sp => r.speciesLatin.indexOf(sp.latin) > -1);
+    const unknownList = hasUnknown ? unknownData.filter(sp => r.speciesLatin.indexOf(sp.latin) > -1) : [];
     const venomCount = list.filter(sp => sp.type === 'venom').length;
-    const safeCount = list.length - venomCount;
+    const safeCount = (list.length - venomCount) + unknownList.length;
     return `<a href="region-${r.slug}.html" class="article-row reveal in">
       <div>
         <span class="tag">${escapeHtml(venomCount + ' ' + rg.venomLabel + ' · ' + safeCount + ' ' + rg.safeLabel)}</span>
@@ -441,10 +485,12 @@ function renderRegionDetail(lang){
   const blurbEl = document.getElementById('rg-blurb'); if (blurbEl) blurbEl.textContent = r.intro[lang];
 
   const list = speciesData.filter(sp => r.speciesLatin.indexOf(sp.latin) > -1);
+  const unknownList = (typeof unknownData !== 'undefined') ? unknownData.filter(sp => r.speciesLatin.indexOf(sp.latin) > -1) : [];
   const eyebrowEl = document.getElementById('rg-eyebrow');
-  if (eyebrowEl) eyebrowEl.textContent = list.length + ' ' + rg.speciesFoundHere;
+  if (eyebrowEl) eyebrowEl.textContent = (list.length + unknownList.length) + ' ' + rg.speciesFoundHere;
 
-  grid.innerHTML = list.map(sp => regionSpeciesCardHtml(sp, lang, g)).join('');
+  grid.innerHTML = list.map(sp => regionSpeciesCardHtml(sp, lang, g, false)).join('')
+    + unknownList.map(sp => regionSpeciesCardHtml(sp, lang, g, true)).join('');
 }
 
 /* ---------- عرض روابط خارطة الموقع ---------- */
@@ -489,6 +535,7 @@ function renderPageContent(lang){
   renderUnknown(lang);
   renderStats(lang);
   renderSnakeArticle(lang);
+  renderUnknownArticle(lang);
   renderEduArticle(lang);
   renderFaq(lang);
   renderSpeciesArticle(lang, 'venomous-article', 'venom', 'articleVenomous');

@@ -112,7 +112,8 @@ const I18N = {
       eyebrow: "19 نوعًا غير سام",
       title: "مكتبة الأفاعي الغير معروفة في إسرائيل",
       lead: "مجموعة من الأفاعي غير المعروفة وغير السامة الموثّقة في إسرائيل.",
-      noticeText: "هذه الأنواع غير سامة وغير خطرة على الإنسان، وبعضها خلفي الأنياب بسمّ خفيف جدًا."
+      noticeText: "هذه الأنواع غير سامة وغير خطرة على الإنسان، وبعضها خلفي الأنياب بسمّ خفيف جدًا.",
+      backToUnknown: "← العودة إلى مكتبة الأفاعي الغير معروفة"
     },
     stats: {
       breadcrumb: "إحصاءات وبيانات",
@@ -715,7 +716,8 @@ const I18N = {
       eyebrow: "19 מינים לא ארסיים",
       title: "ספריית הנחשים הלא-מוכרים בישראל",
       lead: "אוסף של נחשים לא-מוכרים ולא ארסיים שתועדו בישראל.",
-      noticeText: "מינים אלה אינם ארסיים ואינם מסוכנים לאדם, וחלקם בעלי ארס אחורי חלש מאוד."
+      noticeText: "מינים אלה אינם ארסיים ואינם מסוכנים לאדם, וחלקם בעלי ארס אחורי חלש מאוד.",
+      backToUnknown: "← חזרה לספריית הנחשים הלא-מוכרים"
     },
     stats: {
       breadcrumb: "נתונים וסטטיסטיקה",
@@ -1319,7 +1321,8 @@ const I18N = {
       eyebrow: "19 non-venomous species",
       title: "Library of Unknown Snakes in Israel",
       lead: "A collection of lesser-known, non-venomous snakes documented in Israel.",
-      noticeText: "These species are non-venomous and harmless to humans; some are rear-fanged with very mild venom."
+      noticeText: "These species are non-venomous and harmless to humans; some are rear-fanged with very mild venom.",
+      backToUnknown: "← Back to the Unknown Snakes library"
     },
     stats: {
       breadcrumb: "Data & Statistics",
