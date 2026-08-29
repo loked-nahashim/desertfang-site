@@ -1,5 +1,5 @@
 /* عامل خدمة ناب الصحراء — يفعّل التثبيت كتطبيق ويسرّع التصفّح */
-const CACHE = 'desertfang-v6';
+const CACHE = 'desertfang-v7';
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();
