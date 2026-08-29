@@ -226,6 +226,78 @@ const speciesData = [
 
 ];
 
+/* ---------- 1.5) المناطق الجغرافية: تجميع الأنواع حسب توزّعها الفعلي (حقل range أعلاه) ----------
+   كل منطقة تحتوي على قائمة speciesLatin بالأسماء العلمية كما وردت بالضبط في speciesData أعلاه،
+   لذلك لا حاجة لتكرار البيانات — تُقرأ الأنواع من نفس المصدر. */
+const regionsData = [
+
+  { slug:"negev",
+    heroImg:"images/cerastes-cerastes.jpg",
+    name:{ ar:"النقب", he:"הנגב", en:"the Negev" },
+    blurb:{
+      ar:"أكبر منطقة صحراوية في إسرائيل ومربض عدد كبير من الأنواع، من الكثبان الرملية شمال غربها إلى الوديان الصخرية جنوبها.",
+      he:"אזור המדבר הגדול בישראל ובית למגוון הרחב ביותר של מינים, מהחוליות בצפון-מערבו ועד הוואדיות הסלעיות בדרומו.",
+      en:"Israel's largest desert region and home to the widest range of species, from the sandy dunes in its northwest to the rocky wadis in its south." },
+    intro:{
+      ar:"يمتد النقب على نحو 60% من مساحة إسرائيل، وتتنوع بيئاته بين كثبان رملية شمالية غربية وسهول حصوية ووديان صخرية جنوبية. هذا التنوع الجغرافي يجعله موطنًا لأكبر عدد من أنواع الأفاعي الموثقة في هذا الدليل، السامة وغير السامة على حد سواء. إن كنت تسير أو تعمل في مناطق النقب المفتوحة، فالتعرف على الأنواع الشائعة هنا خطوة أساسية للسلامة.",
+      he:"הנגב משתרע על כ-60% משטח ישראל, ובתי הגידול שבו נעים בין דיונות חוליות בצפון-מערב, מישורים חצציים ווואדיות סלעיות בדרום. גיוון גיאוגרפי זה הופך אותו לבית למספר הגדול ביותר של מיני נחשים המתועדים במדריך זה, ארסיים ולא-ארסיים כאחד. אם אתם הולכים או עובדים בשטחים הפתוחים של הנגב, היכרות עם המינים הנפוצים כאן היא צעד בטיחותי בסיסי.",
+      en:"The Negev spans about 60% of Israel's land area, with habitats ranging from sandy dunes in the northwest to gravel plains and rocky wadis in the south. This geographic diversity makes it home to the largest number of documented snake species in this guide, both venomous and non-venomous. If you hike or work in the open Negev, learning the common species here is a basic safety step." },
+    speciesLatin:["Daboia palaestinae","Cerastes cerastes","Cerastes gasperettii","Cerastes vipera","Pseudocerastes fieldi","Echis coloratus","Atractaspis engaddensis","Walterinnesia aegyptia","Dolichophis jugularis","Spalerosophis diadema","Hemorrhois nummifer","Platyceps rogersi","Platyceps collaris","Psammophis schokari","Telescopus fallax","Eryx jaculus","Xerotyphlops vermicularis","Pseudopus apodus"] },
+
+  { slug:"arava-eilat",
+    heroImg:"images/cerastes-gasperettii.jpg",
+    name:{ ar:"العربة وجبال إيلات", he:"הערבה והרי אילת", en:"the Arava & Eilat Mountains" },
+    blurb:{
+      ar:"الممر الصحراوي الحار الممتد بين البحر الميت وإيلات، حيث تعيش أفاعٍ متكيفة بشكل خاص مع الحرارة الشديدة وقلة المياه.",
+      he:"המסדרון המדברי החם המשתרע בין ים המלח לאילת, ובו חיים נחשים המותאמים במיוחד לחום הקיצוני ולמיעוט המים.",
+      en:"The hot desert corridor stretching from the Dead Sea to Eilat, home to snakes specially adapted to extreme heat and scarce water." },
+    intro:{
+      ar:"تمثل العربة الجزء الجنوبي من الصدع السوري الأفريقي، وتتميز بمناخ صحراوي قاسٍ وحرارة مرتفعة معظم أيام السنة، بينما ترتفع جبال إيلات في أقصى الجنوب لتضيف تضاريس صخرية وأودية جافة. هذه الظروف القاسية صقلت أنواعًا من الأفاعي قادرة على البقاء بأقل قدر من الماء، والاختباء تحت الرمل أو بين الصخور هربًا من حرارة النهار. من يزور هذه المنطقة، خصوصًا ليلًا أو عند الغروب حين تنشط هذه الأفاعي، يحتاج إلى حذر إضافي.",
+      he:"הערבה מהווה את החלק הדרומי של השבר הסורי-אפריקני, ומאופיינת באקלים מדברי קשה ובחום גבוה ברוב ימות השנה, בעוד הרי אילת שבקצה הדרומי מוסיפים נוף סלעי ווואדיות יבשות. תנאים קיצוניים אלה עיצבו מיני נחשים המסוגלים לשרוד עם מעט מאוד מים, ומתחפרים בחול או מתחבאים בין הסלעים כדי להימלט מחום היום. מי שמבקר באזור זה, בייחוד בלילה או בשעות הדמדומים שבהן נחשים אלה פעילים, נדרש לזהירות מוגברת.",
+      en:"The Arava forms the southern part of the Syrian-African rift, marked by a harsh desert climate and high heat most of the year, while the Eilat mountains at the southern tip add rocky terrain and dry canyons. These extreme conditions have shaped snake species able to survive on very little water, burrowing into sand or hiding among rocks to escape the daytime heat. Visitors to this area, especially at night or dusk when these snakes are active, should take extra care." },
+    speciesLatin:["Cerastes gasperettii","Echis coloratus","Atractaspis engaddensis","Walterinnesia aegyptia","Spalerosophis diadema","Platyceps rogersi","Psammophis schokari","Xerotyphlops vermicularis","Pseudopus apodus"] },
+
+  { slug:"jordan-valley-dead-sea",
+    heroImg:"images/atractaspis-engaddensis.jpg",
+    name:{ ar:"غور الأردن والبحر الميت وصحراء يهودا", he:"בקעת הירדן, ים המלח ומדבר יהודה", en:"the Jordan Valley, Dead Sea & Judean Desert" },
+    blurb:{
+      ar:"أخفض منطقة على سطح الأرض، حيث تلتقي الينابيع والواحات بصحراء صخرية قاحلة، وتعيش فيها بعض أخطر أفاعي إسرائيل.",
+      he:"האזור הנמוך ביותר עלי אדמות, שבו נפגשים מעיינות ונאות מדבר עם מדבר סלעי צחיח, ובו חיים חלק מהנחשים המסוכנים ביותר בישראל.",
+      en:"The lowest region on Earth, where springs and oases meet a barren rocky desert, home to some of Israel's most dangerous snakes." },
+    intro:{
+      ar:"يضم هذا الإقليم غور الأردن الممتد من الشمال، وصولًا إلى شواطئ البحر الميت التي تشكل أخفض نقطة على سطح الأرض، ثم مرتفعات صحراء يهودا الصخرية غربًا. رغم قسوة المناخ، توجد في هذه المنطقة واحات مياه مثل عين جدي، ما يجذب الأفاعي وفرائسها معًا حول مصادر المياه النادرة. من يتجول قرب الينابيع أو المسارات الصخرية في هذه المنطقة يجب أن يتوقع لقاءً محتملًا مع أفاعٍ سامة، وأن يلتزم بالحذر عند تسلق الصخور أو الجلوس تحت ظلالها.",
+      he:"אזור זה כולל את בקעת הירדן המשתרעת מצפון, עד לחופי ים המלח המהווים את הנקודה הנמוכה ביותר עלי אדמות, ולאחר מכן את מרומי מדבר יהודה הסלעיים במערב. חרף האקלים הקשה, קיימות באזור נאות מים כמו עין גדי, המושכות אליהן נחשים וטרפם כאחד סביב מקורות המים הנדירים. מי שמטייל ליד מעיינות או שבילים סלעיים באזור זה צריך לצפות למפגש אפשרי עם נחשים ארסיים, ולנהוג בזהירות בטיפוס על סלעים או בישיבה בצילם.",
+      en:"This region includes the Jordan Valley stretching from the north, down to the shores of the Dead Sea, the lowest point on Earth, and the rocky highlands of the Judean Desert to the west. Despite the harsh climate, water oases such as Ein Gedi exist here, drawing snakes and their prey alike around these rare water sources. Anyone hiking near springs or rocky trails in this region should expect a possible encounter with venomous snakes and take care when climbing rocks or resting in their shade." },
+    speciesLatin:["Echis coloratus","Atractaspis engaddensis","Walterinnesia aegyptia","Spalerosophis diadema","Platyceps rogersi","Psammophis schokari","Xerotyphlops vermicularis","Pseudopus apodus"] },
+
+  { slug:"galilee-hermon",
+    heroImg:"images/montivipera-bornmuelleri.jpg",
+    name:{ ar:"الجليل وجبل الشيخ (الشمال)", he:"הגליל והחרמון (הצפון)", en:"Galilee & Mount Hermon (the North)" },
+    blurb:{
+      ar:"المنطقة الشمالية الباردة نسبيًا من إسرائيل، وموطن أفعى جبل الشيخ النادرة التي لا توجد إلا هناك.",
+      he:"האזור הצפוני והקריר יחסית של ישראל, ומקום מושבו של צפע החרמון הנדיר שאינו נמצא בשום מקום אחר בארץ.",
+      en:"Israel's relatively cool northern region, and home to the rare Mount Hermon viper found nowhere else in the country." },
+    intro:{
+      ar:"يتميز أقصى شمال إسرائيل، وعلى رأسه جبل الشيخ، بمناخ أكثر برودة ورطوبة من بقية البلاد، بل يشهد تساقط ثلوج في مرتفعاته شتاءً. هذه الظروف الفريدة تجعل هذه المنطقة الموطن الوحيد في إسرائيل لأفعى جبل الشيخ النادرة، التي تنشط لفترة قصيرة فقط بعد ذوبان الثلوج. كما تصل إليها أنواع أخرى تمتد من جنوب البلاد شمالًا حتى حدود لبنان. الأفاعي هنا أقل نشاطًا خلال أشهر الشتاء الباردة مقارنة بمناطق الجنوب الصحراوية.",
+      he:"קצה הצפון של ישראל, ובראשו הר החרמון, מתאפיין באקלים קריר ולח יותר משאר הארץ, ואף חווה ירידות שלג בפסגותיו בחורף. תנאים ייחודיים אלה הופכים את האזור לבית היחיד בישראל לצפע החרמון הנדיר, הפעיל לתקופה קצרה בלבד לאחר הפשרת השלגים. אל האזור מגיעים גם מינים נוספים המשתרעים מדרום הארץ צפונה עד לגבול לבנון. הנחשים כאן פחות פעילים בחודשי החורף הקרים בהשוואה לאזורי הדרום המדבריים.",
+      en:"The far north of Israel, capped by Mount Hermon, has a cooler, more humid climate than the rest of the country, with snowfall on its heights in winter. These unique conditions make this the only place in Israel where the rare Mount Hermon viper lives, active only briefly after the snow melts. Other species reaching here extend all the way from the south of the country up to the Lebanese border. Snakes here are less active during the cold winter months compared to the desert regions of the south." },
+    speciesLatin:["Montivipera bornmuelleri","Daboia palaestinae","Dolichophis jugularis","Hemorrhois nummifer","Platyceps collaris","Psammophis schokari","Telescopus fallax","Eryx jaculus","Xerotyphlops vermicularis","Pseudopus apodus"] },
+
+  { slug:"mediterranean-coastal",
+    heroImg:"images/malpolon-insignitus.jpg",
+    name:{ ar:"المناطق المتوسطية والساحل (الوسط)", he:"אזורים ים-תיכוניים והחוף (המרכז)", en:"Mediterranean & Coastal Areas (the Center)" },
+    blurb:{
+      ar:"السهل الساحلي والمناطق المعتدلة وسط البلاد، حيث تنشط الأفاعي قرب الحقول والحدائق والمسطحات المائية.",
+      he:"מישור החוף והאזורים הממוזגים במרכז הארץ, שבהם נחשים פעילים בקרבת שדות, גינות ומקווי מים.",
+      en:"The coastal plain and temperate areas of central Israel, where snakes are active near fields, gardens and water bodies." },
+    intro:{
+      ar:"يضم هذا الإقليم السهل الساحلي والمناطق ذات المناخ المتوسطي المعتدل في وسط البلاد، من بئر السبع جنوبًا وحتى محيط المدن الكبرى. المناخ الأكثر اعتدالًا مقارنة بالصحراء، ووفرة الحدائق والحقول الزراعية والمسطحات المائية، تجعل هذه المنطقة مناسبة بشكل خاص لعدد من أنواع الأفاعي غير السامة. ومع ذلك فإن الأفعى الفلسطينية، وهي الأفعى السامة الأكثر انتشارًا في إسرائيل، موجودة هنا أيضًا. ولأن هذه المنطقة هي الأكثر اكتظاظًا بالسكان، فإن معظم حالات مواجهة الأفاعي داخل المنازل والحدائق تحدث هنا، ما يجعل التعرف على الأنواع الآمنة أمرًا مهمًا لتفادي القلق غير المبرر.",
+      he:"אזור זה כולל את מישור החוף ואת האזורים בעלי האקלים הים-תיכוני הממוזג במרכז הארץ, מבאר שבע בדרום ועד סביבות הערים הגדולות. האקלים המתון יותר בהשוואה למדבר, ושפע הגינות, השדות החקלאיים ומקווי המים, הופכים את האזור למתאים בייחוד למספר מיני נחשים לא-ארסיים. עם זאת, גם הצפע הארץ ישראלי, הנחש הארסי הנפוץ ביותר בישראל, נמצא כאן. מכיוון שזהו האזור הצפוף ביותר באוכלוסין, רוב המפגשים עם נחשים בבתים ובגינות מתרחשים דווקא כאן, מה שהופך את ההיכרות עם המינים הבטוחים לחשובה במיוחד למניעת דאגה שלא לצורך.",
+      en:"This region covers the coastal plain and the temperate Mediterranean-climate areas of central Israel, from Beer Sheva in the south to the outskirts of the major cities. The milder climate compared to the desert, together with abundant gardens, farmland and water bodies, makes this region especially suitable for several non-venomous snake species. Even so, the Palestine viper, Israel's most widespread venomous snake, is found here too. Because this is the most densely populated region, most encounters with snakes inside homes and gardens happen right here, making it especially useful to learn the harmless species and avoid unnecessary worry." },
+    speciesLatin:["Daboia palaestinae","Dolichophis jugularis","Malpolon insignitus","Spalerosophis diadema","Hemorrhois nummifer","Platyceps collaris","Psammophis schokari","Natrix tessellata","Telescopus fallax","Eryx jaculus","Xerotyphlops vermicularis","Pseudopus apodus"] }
+
+];
+
 /* ---------- 2) مكتبة الصور: أضف صورة جديدة هنا ----------
    لعرض صورة حقيقية بدل المربع المؤقت، أضف الحقل "src": "images/اسمالملف.jpg" */
 const photosData = [

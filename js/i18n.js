@@ -8,7 +8,7 @@ const I18N = {
 
   ar: {
     dir: "rtl",
-    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", faq:"الأسئلة الشائعة", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا" },
+    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", faq:"الأسئلة الشائعة", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا", regions:"الأفاعي حسب المنطقة" },
     news: {
       breadcrumb: "الأخبار",
       eyebrow: "آخر المستجدّات",
@@ -25,6 +25,18 @@ const I18N = {
       noteLabel: "تنويه"
     },
     brand: { name:"ناب الصحراء", tagline:"الدليل الميداني لناب الصحراء" },
+    regions: {
+      breadcrumb: "المناطق",
+      eyebrow: "دليل جغرافي",
+      title: "أين تعيش أفاعي إسرائيل؟ دليل حسب المنطقة",
+      lead: "وزّعنا الأنواع الـ21 الموثقة في هذا الدليل على خمس مناطق جغرافية رئيسية في إسرائيل، استنادًا إلى بيانات انتشارها الفعلية. اختر منطقتك لتتعرف على الأفاعي التي قد تصادفها فيها.",
+      venomLabel: "سامة",
+      safeLabel: "غير سامة",
+      viewLink: "عرض أنواع المنطقة ←",
+      speciesFoundHere: "نوعًا موثقًا في هذه المنطقة",
+      detailTitlePrefix: "أفاعي",
+      noticeText: "تصنيف الأنواع حسب المناطق يعتمد على بيانات التوزّع الجغرافي الموثقة لكل نوع في دليل الأفاعي، وقد يتداخل انتشار بعض الأنواع بين أكثر من منطقة."
+    },
 
     home: {
       eyebrow: "دليل ميداني • 21 نوعًا موثقًا في إسرائيل",
@@ -588,7 +600,7 @@ const I18N = {
 
   he: {
     dir: "rtl",
-    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", faq:"שאלות נפוצות", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר" },
+    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", faq:"שאלות נפוצות", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר", regions:"נחשים לפי אזור" },
     news: {
       breadcrumb: "חדשות",
       eyebrow: "העדכונים האחרונים",
@@ -605,6 +617,18 @@ const I18N = {
       noteLabel: "הערה"
     },
     brand: { name:"ניב המדבר", tagline:"המדריך השטחי של ניב המדבר" },
+    regions: {
+      breadcrumb: "אזורים",
+      eyebrow: "מדריך גיאוגרפי",
+      title: "איפה חיים נחשי ישראל? מדריך לפי אזור",
+      lead: "חילקנו את 21 המינים המתועדים במדריך זה לחמישה אזורים גיאוגרפיים מרכזיים בישראל, בהתבסס על נתוני התפוצה בפועל שלהם. בחרו את האזור שלכם כדי להכיר את הנחשים שעשויים להיתקל בכם בו.",
+      venomLabel: "ארסיים",
+      safeLabel: "לא ארסיים",
+      viewLink: "צפו במיני האזור ←",
+      speciesFoundHere: "מינים מתועדים באזור זה",
+      detailTitlePrefix: "נחשי",
+      noticeText: "שיוך המינים לאזורים מבוסס על נתוני התפוצה הגיאוגרפית המתועדים לכל מין במדריך הנחשים, וייתכן שתפוצתם של חלק מהמינים חופפת בין כמה אזורים."
+    },
 
     home: {
       eyebrow: "מדריך שטח • 21 מינים מתועדים בישראל",
@@ -1169,7 +1193,7 @@ const I18N = {
 
   en: {
     dir: "ltr",
-    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", faq:"FAQ", privacy:"Privacy", about:"About", contact:"Contact" },
+    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", faq:"FAQ", privacy:"Privacy", about:"About", contact:"Contact", regions:"Snakes by Region" },
     news: {
       breadcrumb: "News",
       eyebrow: "Latest Updates",
@@ -1186,6 +1210,18 @@ const I18N = {
       noteLabel: "Note"
     },
     brand: { name:"Desert Fang", tagline:"DESERT FANG FIELD GUIDE" },
+    regions: {
+      breadcrumb: "Regions",
+      eyebrow: "Geographic guide",
+      title: "Where Do Israel's Snakes Live? A Region-by-Region Guide",
+      lead: "We've grouped the 21 species documented in this guide into five main geographic regions of Israel, based on their actual range data. Pick your region to see which snakes you might encounter there.",
+      venomLabel: "venomous",
+      safeLabel: "non-venomous",
+      viewLink: "View region's species →",
+      speciesFoundHere: "documented species in this region",
+      detailTitlePrefix: "Snakes of",
+      noticeText: "Species are assigned to regions based on the documented geographic range of each species in the snake guide, and some species' ranges overlap across more than one region."
+    },
 
     home: {
       eyebrow: "Field guide • 21 documented species in Israel",

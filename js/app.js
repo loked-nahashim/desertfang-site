@@ -377,6 +377,76 @@ function renderVideos(lang){
   }).join('');
 }
 
+/* ---------- عرض صفحات المناطق الجغرافية ---------- */
+function regionSpeciesCardHtml(sp, lang, g){
+  const badgeClass = sp.type === 'venom' ? 'badge-venom' : 'badge-safe';
+  const badgeText = sp.type === 'venom' ? g.badgeVenom : g.badgeSafe;
+  const photo = sp.img
+    ? `<img src="${escapeHtml(sp.img)}" alt="${escapeHtml(sp.name[lang])}" loading="lazy" decoding="async">`
+    : `${escapeHtml(sp.name[lang])}<br>${escapeHtml(g.photoSoon)}`;
+  const slug = (sp.latin || '').toLowerCase().replace(/ /g, '-');
+  const hasArticle = (typeof speciesArticles !== 'undefined') && speciesArticles[slug];
+  const cardInner = `
+      <div class="species-photo">${photo}<span class="species-badge ${badgeClass}">${escapeHtml(badgeText)}</span></div>
+      <div class="species-body">
+        <div class="species-top">
+          <div><h3>${escapeHtml(sp.name[lang])}</h3><span class="species-latin">${escapeHtml(sp.latin)}</span></div>
+        </div>
+        <p>${escapeHtml(sp.desc[lang])}</p>
+        <div class="species-meta">
+          <span>${escapeHtml(g.lengthLabel)}: <strong>${escapeHtml(sp.length[lang])}</strong></span>
+          ${sp.diet ? `<span>${escapeHtml(g.dietLabel)}: <strong>${escapeHtml(sp.diet[lang])}</strong></span>` : ''}
+          <span>${escapeHtml(g.rangeLabel)}: <strong>${escapeHtml(sp.range[lang])}</strong></span>
+        </div>
+        ${hasArticle ? `<span class="species-readmore">${escapeHtml((g.readMore || 'اقرأ المقال الكامل ←'))}</span>` : ''}
+      </div>`;
+  if (hasArticle){
+    return `<a href="snake-${slug}.html" class="species-card species-card-link reveal in" data-type="${sp.type}">${cardInner}</a>`;
+  }
+  return `<div class="species-card reveal in" data-type="${sp.type}">${cardInner}</div>`;
+}
+
+function renderRegionsHub(lang){
+  const grid = document.getElementById('regions-grid');
+  if (!grid || typeof regionsData === 'undefined') return;
+  const dict = I18N[lang] || I18N[I18N_DEFAULT_LANG];
+  const rg = dict.regions;
+  grid.innerHTML = regionsData.map(r => {
+    const list = speciesData.filter(sp => r.speciesLatin.indexOf(sp.latin) > -1);
+    const venomCount = list.filter(sp => sp.type === 'venom').length;
+    const safeCount = list.length - venomCount;
+    return `<a href="region-${r.slug}.html" class="article-row reveal in">
+      <div>
+        <span class="tag">${escapeHtml(venomCount + ' ' + rg.venomLabel + ' · ' + safeCount + ' ' + rg.safeLabel)}</span>
+        <h3>${escapeHtml(r.name[lang])}</h3>
+        <p>${escapeHtml(r.blurb[lang])}</p>
+      </div>
+      <span class="arrow">←</span>
+    </a>`;
+  }).join('');
+}
+
+function renderRegionDetail(lang){
+  const grid = document.getElementById('region-species-grid');
+  if (!grid || typeof regionsData === 'undefined') return;
+  const slug = document.body.dataset.region;
+  const r = regionsData.find(x => x.slug === slug);
+  if (!r) return;
+  const dict = I18N[lang] || I18N[I18N_DEFAULT_LANG];
+  const g = dict.guide;
+  const rg = dict.regions;
+
+  const nameEl = document.getElementById('rg-name'); if (nameEl) nameEl.textContent = r.name[lang];
+  const bcEl = document.getElementById('rg-breadcrumb-name'); if (bcEl) bcEl.textContent = r.name[lang];
+  const blurbEl = document.getElementById('rg-blurb'); if (blurbEl) blurbEl.textContent = r.intro[lang];
+
+  const list = speciesData.filter(sp => r.speciesLatin.indexOf(sp.latin) > -1);
+  const eyebrowEl = document.getElementById('rg-eyebrow');
+  if (eyebrowEl) eyebrowEl.textContent = list.length + ' ' + rg.speciesFoundHere;
+
+  grid.innerHTML = list.map(sp => regionSpeciesCardHtml(sp, lang, g)).join('');
+}
+
 /* ---------- عرض مكتبة المقالات ---------- */
 function renderArticles(lang){
   const el = document.getElementById('articles-list');
@@ -405,6 +475,8 @@ function renderPageContent(lang){
   renderPhotos(lang);
   renderVideos(lang);
   renderArticles(lang);
+  renderRegionsHub(lang);
+  renderRegionDetail(lang);
 }
 
 /* ---------- تهيئة عامة ---------- */
