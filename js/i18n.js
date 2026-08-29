@@ -8,7 +8,7 @@ const I18N = {
 
   ar: {
     dir: "rtl",
-    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", faq:"الأسئلة الشائعة", privacy:"الخصوصية", about:"من نحن", contact:"اتصل بنا", regions:"الأفاعي حسب المنطقة" },
+    nav: { home:"الرئيسية", guide:"دليل الأفاعي", stats:"إحصاءات وبيانات", adventures:"بيئة الزواحف", photos:"الصور", videos:"الفيديوهات", articles:"المقالات", faq:"الأسئلة الشائعة", privacy:"الخصوصية", terms:"شروط الاستخدام", about:"من نحن", contact:"اتصل بنا", regions:"الأفاعي حسب المنطقة" },
     news: {
       breadcrumb: "الأخبار",
       eyebrow: "آخر المستجدّات",
@@ -551,6 +551,30 @@ const I18N = {
       contactTitle: "التواصل",
       contactText: "لأي استفسار بخصوص سياسة الخصوصية، يمكنك التواصل معنا عبر البريد الإلكتروني snakes.types@gmail.com أو عبر صفحة «اتصل بنا»."
     },
+    terms: {
+      breadcrumb: "شروط الاستخدام",
+      updated: "آخر تحديث: أغسطس 2026",
+      title: "شروط الاستخدام",
+      lead: "باستخدامك موقع «ناب الصحراء» فإنك توافق على الشروط الموضحة أدناه. يرجى قراءتها بعناية قبل متابعة تصفح الموقع.",
+      introTitle: "قبول الشروط",
+      introText: "الدخول إلى موقع «ناب الصحراء» واستخدامه يعني موافقتك الكاملة على شروط الاستخدام هذه. إذا كنت لا توافق على أي بند منها، يرجى التوقف عن استخدام الموقع.",
+      useTitle: "الغرض من الموقع واستخدامه",
+      useText: "هذا الموقع مُعدّ لأغراض تعليمية وتوثيقية تتعلق بأفاعي إسرائيل، ومخصص للاستخدام الشخصي وغير التجاري. يُمنع نسخ محتوى الموقع أو إعادة نشره أو استخدامه بشكل آلي (مثل الزحف الآلي أو استخراج البيانات) دون إذن كتابي مسبق منا.",
+      contentTitle: "الملكية الفكرية والمحتوى",
+      contentText: "جميع النصوص والصور والفيديوهات والتصاميم الموجودة في هذا الموقع محمية بحقوق الملكية الفكرية وتعود ملكيتها لموقع «ناب الصحراء» أو للجهات التي رخّصت استخدامها، ما لم يُذكر خلاف ذلك. لا يجوز استخدام أي من هذا المحتوى تجاريًا دون الحصول على إذن مسبق.",
+      disclaimerTitle: "إخلاء مسؤولية عام",
+      disclaimerText: "المعلومات المقدَّمة في هذا الموقع لأغراض تثقيفية وتوثيقية عامة فقط، ولا تُعدّ بديلاً عن استشارة مختص أو جهة رسمية. لا نضمن دقة أو اكتمال أو حداثة كل المعلومات في جميع الأوقات. التعرّف على الأفاعي ميدانيًا ينطوي على مخاطر حقيقية، ويجب عدم الاعتماد على صور أو أوصاف الموقع وحدها لتحديد نوع الأفعى أو درجة خطورتها؛ في حال التعرّض للدغة أفعى، اطلب الرعاية الطبية الطارئة فورًا ولا تنتظر.",
+      linksTitle: "الروابط الخارجية",
+      linksText: "قد يحتوي الموقع على روابط لمواقع أو منصّات خارجية مثل يوتيوب وفيسبوك وإنستغرام. لا نتحمّل أي مسؤولية عن محتوى أو سياسات تلك المواقع الخارجية، ووجود الرابط لا يعني تأييدنا لمحتواها.",
+      adsTitle: "الإعلانات",
+      adsText: "قد يعرض هذا الموقع إعلانات عبر خدمة Google AdSense وشركاء إعلانيين آخرين. هذه الإعلانات لا تعكس بالضرورة آراء أو توصيات إدارة الموقع، ولسنا مسؤولين عن محتوى الإعلانات المعروضة أو المنتجات والخدمات التي تروّج لها.",
+      liabilityTitle: "حدود المسؤولية",
+      liabilityText: "لا يتحمّل موقع «ناب الصحراء» أو القائمون عليه أي مسؤولية عن أي أضرار مباشرة أو غير مباشرة قد تنتج عن استخدام الموقع أو الاعتماد على محتواه، إلى أقصى حد يسمح به القانون.",
+      changesTitle: "تعديل هذه الشروط",
+      changesText: "يجوز لنا تحديث شروط الاستخدام هذه من وقت لآخر، وسيظهر تاريخ آخر تحديث أعلى الصفحة. استمرارك في استخدام الموقع بعد أي تعديل يعني موافقتك على الشروط المحدّثة.",
+      contactTitle: "التواصل",
+      contactText: "لأي استفسار بخصوص شروط الاستخدام، يمكنك التواصل معنا عبر البريد الإلكتروني snakes.types@gmail.com أو عبر صفحة «اتصل بنا»."
+    },
     about: {
       breadcrumb: "من نحن",
       eyebrow: "تعرّفوا علينا",
@@ -612,7 +636,7 @@ const I18N = {
 
   he: {
     dir: "rtl",
-    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", faq:"שאלות נפוצות", privacy:"פרטיות", about:"מי אנחנו", contact:"צור קשר", regions:"נחשים לפי אזור" },
+    nav: { home:"בית", guide:"מדריך הנחשים", stats:"נתונים וסטטיסטיקה", adventures:"סביבת הזוחלים", photos:"גלריית תמונות", videos:"גלריית וידאו", articles:"מאמרים", faq:"שאלות נפוצות", privacy:"פרטיות", terms:"תנאי שימוש", about:"מי אנחנו", contact:"צור קשר", regions:"נחשים לפי אזור" },
     news: {
       breadcrumb: "חדשות",
       eyebrow: "העדכונים האחרונים",
@@ -1156,6 +1180,30 @@ const I18N = {
       contactTitle: "יצירת קשר",
       contactText: "לכל שאלה בנוגע למדיניות הפרטיות, ניתן ליצור קשר בדוא\"ל snakes.types@gmail.com או דרך עמוד «צור קשר»."
     },
+    terms: {
+      breadcrumb: "תנאי שימוש",
+      updated: "עודכן לאחרונה: אוגוסט 2026",
+      title: "תנאי שימוש",
+      lead: "השימוש באתר «ניב המדבר» מהווה הסכמה לתנאים המפורטים להלן. אנא קראו אותם בעיון לפני המשך הגלישה באתר.",
+      introTitle: "קבלת התנאים",
+      introText: "הכניסה לאתר «ניב המדבר» והשימוש בו מהווים הסכמה מלאה לתנאי שימוש אלה. אם אינכם מסכימים לאחד מהסעיפים, אנא הימנעו משימוש באתר.",
+      useTitle: "מטרת האתר ואופן השימוש בו",
+      useText: "אתר זה נועד למטרות חינוכיות ותיעודיות בנוגע לנחשי ישראל, ומיועד לשימוש אישי ולא-מסחרי. אין להעתיק, להפיץ מחדש או לעשות שימוש אוטומטי (כגון סריקה אוטומטית או חילוץ נתונים) בתוכן האתר ללא אישור מראש ובכתב.",
+      contentTitle: "קניין רוחני ותוכן",
+      contentText: "כל הטקסטים, התמונות, הסרטונים והעיצוב באתר זה מוגנים בזכויות קניין רוחני ושייכים לאתר «ניב המדבר» או לגורמים שהעניקו רישיון לשימוש בהם, אלא אם צוין אחרת. אין לעשות שימוש מסחרי בתוכן זה ללא קבלת אישור מראש.",
+      disclaimerTitle: "הבהרה כללית",
+      disclaimerText: "המידע המוצג באתר זה נועד למטרות חינוכיות ותיעודיות כלליות בלבד, ואינו מהווה תחליף להתייעצות עם גורם מוסמך או רשמי. איננו מתחייבים לדיוק, שלמות או עדכניות המידע בכל עת. זיהוי נחשים בשטח כרוך בסיכון ממשי, ואין להסתמך על תמונות או תיאורים באתר בלבד לצורך זיהוי סוג הנחש או רמת הסכנה שבו; במקרה של הכשת נחש, יש לפנות מיד לקבלת טיפול רפואי דחוף וללא המתנה.",
+      linksTitle: "קישורים חיצוניים",
+      linksText: "האתר עשוי לכלול קישורים לאתרים או פלטפורמות חיצוניות כמו יוטיוב, פייסבוק ואינסטגרם. איננו נושאים באחריות לתוכן או למדיניות של אתרים חיצוניים אלה, וקיומו של קישור אינו מהווה המלצה או תמיכה בתוכנם.",
+      adsTitle: "פרסומות",
+      adsText: "אתר זה עשוי להציג פרסומות באמצעות שירות Google AdSense ושותפים פרסומיים נוספים. פרסומות אלה אינן בהכרח משקפות את דעותיה או המלצותיה של הנהלת האתר, ואיננו אחראים לתוכן הפרסומות המוצגות או למוצרים ולשירותים המפורסמים בהן.",
+      liabilityTitle: "הגבלת אחריות",
+      liabilityText: "אתר «ניב המדבר» והאחראים לו אינם נושאים באחריות לכל נזק ישיר או עקיף שעלול להיגרם כתוצאה משימוש באתר או מהסתמכות על תוכנו, במידה המרבית המותרת על פי חוק.",
+      changesTitle: "שינויים בתנאים אלה",
+      changesText: "אנו עשויים לעדכן תנאי שימוש אלה מעת לעת, ותאריך העדכון האחרון יופיע בראש העמוד. המשך השימוש באתר לאחר כל שינוי מהווה הסכמה לתנאים המעודכנים.",
+      contactTitle: "יצירת קשר",
+      contactText: "לכל שאלה בנוגע לתנאי השימוש, ניתן ליצור קשר בדוא\"ל snakes.types@gmail.com או דרך עמוד «צור קשר»."
+    },
     about: {
       breadcrumb: "מי אנחנו",
       eyebrow: "הכירו אותנו",
@@ -1217,7 +1265,7 @@ const I18N = {
 
   en: {
     dir: "ltr",
-    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", faq:"FAQ", privacy:"Privacy", about:"About", contact:"Contact", regions:"Snakes by Region" },
+    nav: { home:"Home", guide:"Snake Guide", stats:"Data & Statistics", adventures:"Reptile Environment", photos:"Photo Gallery", videos:"Video Gallery", articles:"Articles", faq:"FAQ", privacy:"Privacy", terms:"Terms of Use", about:"About", contact:"Contact", regions:"Snakes by Region" },
     news: {
       breadcrumb: "News",
       eyebrow: "Latest Updates",
@@ -1760,6 +1808,30 @@ const I18N = {
       changesText: "We may update this policy from time to time, and the last-updated date will appear at the top of the page. Your continued use of the site after any change means you accept the updated policy.",
       contactTitle: "Contact",
       contactText: "For any question about this privacy policy, you can contact us by email at snakes.types@gmail.com or through the Contact page."
+    },
+    terms: {
+      breadcrumb: "Terms of Use",
+      updated: "Last updated: August 2026",
+      title: "Terms of Use",
+      lead: "By using the Desert Fang website, you agree to the terms outlined below. Please read them carefully before continuing to browse the site.",
+      introTitle: "Acceptance of Terms",
+      introText: "Accessing and using the Desert Fang website constitutes your full agreement to these terms of use. If you do not agree to any part of them, please refrain from using the site.",
+      useTitle: "Purpose and Permitted Use",
+      useText: "This site is intended for educational and documentary purposes related to the snakes of Israel, for personal, non-commercial use. Copying, republishing, or automated use of the site's content (such as scraping or data extraction) without our prior written permission is prohibited.",
+      contentTitle: "Intellectual Property & Content",
+      contentText: "All text, images, videos, and design on this site are protected by intellectual property rights and belong to Desert Fang or to parties who have licensed their use, unless otherwise noted. Commercial use of this content is not permitted without prior authorization.",
+      disclaimerTitle: "General Disclaimer",
+      disclaimerText: "The information provided on this site is for general educational and documentary purposes only and is not a substitute for consulting a qualified professional or official authority. We do not guarantee the accuracy, completeness, or currency of all information at all times. Identifying snakes in the field carries real risk, and you should not rely solely on the site's photos or descriptions to determine a snake's species or danger level. In the event of a snakebite, seek emergency medical care immediately without delay.",
+      linksTitle: "External Links",
+      linksText: "The site may include links to external websites or platforms such as YouTube, Facebook, and Instagram. We are not responsible for the content or policies of these external sites, and the presence of a link does not imply our endorsement of their content.",
+      adsTitle: "Advertising",
+      adsText: "This site may display advertisements through Google AdSense and other advertising partners. These ads do not necessarily reflect the opinions or recommendations of the site's management, and we are not responsible for the content of the ads displayed or the products and services they promote.",
+      liabilityTitle: "Limitation of Liability",
+      liabilityText: "Desert Fang and those responsible for it accept no liability for any direct or indirect damages that may result from using the site or relying on its content, to the fullest extent permitted by law.",
+      changesTitle: "Changes to These Terms",
+      changesText: "We may update these terms of use from time to time, and the date of the last update will appear at the top of the page. Continued use of the site after any change constitutes acceptance of the updated terms.",
+      contactTitle: "Contact",
+      contactText: "For any questions regarding these terms of use, you can contact us at snakes.types@gmail.com or via the Contact page."
     },
     about: {
       breadcrumb: "About",
