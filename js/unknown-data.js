@@ -7,7 +7,7 @@ const unknownData = [
            en:"A long, slender snake bearing four dark stripes running the length of its body." },
     length:{ ar:"حتى نحو 120 سم", he:"עד כ־120 ס\"מ", en:"Up to ~120 cm" },
     diet:{ ar:"أساسًا السحالي، وكذلك القوارض الصغيرة ومفصليات الأرجل", he:"בעיקר לטאות, וכן מכרסמים קטנים ופרוקי־רגליים", en:"Mainly lizards, plus small rodents and arthropods" },
-    range:{ ar:"مناطق صحراوية وقاحلة في مصر وإسرائيل، خاصّة غور الأردن والمناطق الجنوبية", he:"אזורים מדבריים וצחיחים במצרים ובישראל, בעיקר בבקעת הירדן ובאזורים הדרומיים", en:"Desert and arid regions in Egypt and Israel, mainly the Jordan Valley and southern areas" } },
+    range:{ ar:"مناطق صحراوية وقاحلة في إسرائيل، خاصّة غور الأردن والمناطق الجنوبية", he:"אזורים מדבריים וצחיחים בישראל, בעיקר בבקעת הירדן ובאזורים הדרומיים", en:"Desert and arid regions in Israel, mainly the Jordan Valley and southern areas" } },
 
   { latin:"Platyceps saharicus", img:"images/unk-02-platyceps-saharicus.jpg",
     name:{ ar:"ثعبان الصحراء النحيل", he:"זעמן דק", en:"Saharan Racer" },
@@ -34,7 +34,7 @@ const unknownData = [
            en:"A small, slender and agile snake with a pattern of dark rings and bands." },
     length:{ ar:"حتى نحو 60 سم", he:"עד כ־60 ס\"מ", en:"Up to ~60 cm" },
     diet:{ ar:"أساسًا السحالي ومفصليات الأرجل الصغيرة", he:"בעיקר לטאות ופרוקי־רגליים קטנים", en:"Mainly lizards and small arthropods" },
-    range:{ ar:"جنوب النقب والعربة وجبال إيلات وصحراء يهودا وسيناء", he:"דרום הנגב, הערבה, הרי אילת, מדבר יהודה וסיני", en:"Southern Negev, the Arava, Eilat mountains, Judean Desert, and Sinai" } },
+    range:{ ar:"جنوب النقب والعربة وجبال إيلات وصحراء يهودا", he:"דרום הנגב, הערבה, הרי אילת ומדבר יהודה", en:"Southern Negev, the Arava, Eilat mountains, and the Judean Desert" } },
 
   { latin:"Zamenis hohenackeri", img:"images/unk-05-zamenis-hohenackeri.jpg",
     name:{ ar:"أفعى الفئران عبر القوقاز", he:"כרכן חלק", en:"Transcaucasian Ratsnake" },
@@ -43,7 +43,7 @@ const unknownData = [
            en:"In Israel its population is found mainly in the Mount Hermon area." },
     length:{ ar:"حتى نحو 90 سم", he:"עד כ־90 ס\"מ", en:"Up to ~90 cm" },
     diet:{ ar:"قوارض صغيرة وأحيانًا زواحف", he:"מכרסמים קטנים ולעיתים גם זוחלים", en:"Small rodents and occasionally reptiles" },
-    range:{ ar:"الحرمون وشمال هضبة الجولان؛ وعالميًا في القوقاز وتركيا وإيران ولبنان", he:"החרמון וצפון רמת הגולן; בעולם בקווקז, טורקיה, איראן ולבנון", en:"Hermon and northern Golan Heights; worldwide in the Caucasus, Turkey, Iran, and Lebanon" } },
+    range:{ ar:"الحرمون وشمال هضبة الجولان", he:"החרמון וצפון רמת הגולן", en:"Hermon and northern Golan Heights" } },
 
   { latin:"Elaphe druzei", img:"images/unk-06-elaphe-druzei.jpg",
     name:{ ar:"ثعبان الفئران رباعي الخطوط", he:"כרכן קרינים", en:"Four-lined Ratsnake" },
@@ -52,7 +52,7 @@ const unknownData = [
            en:"One of the region's largest snakes; Israel's population was formerly classified under Elaphe quatuorlineata and E. sauromates." },
     length:{ ar:"حتى نحو 2.2 متر", he:"עד כ־2.2 מטרים", en:"Up to ~2.2 meters" },
     diet:{ ar:"قوارض وطيور وبيوض وزواحف", he:"מכרסמים, ציפורים, ביצים וזוחלים", en:"Rodents, birds, eggs, and reptiles" },
-    range:{ ar:"في إسرائيل أساسًا في الحرمون وشمال الجولان؛ ونطاقه العالمي أوسع في جنوب غرب آسيا", he:"בישראל בעיקר בחרמון ובצפון הגולן; תחום התפוצה העולמי רחב יותר בדרום־מערב אסיה", en:"In Israel mainly the Hermon and northern Golan; its global range is broader across southwest Asia" } },
+    range:{ ar:"في إسرائيل أساسًا في الحرمون وشمال الجولان", he:"בישראל בעיקר בחרמון ובצפון הגולן", en:"In Israel, mainly the Hermon and northern Golan" } },
 
   { latin:"Micrelaps muelleri", img:"images/unk-07-micrelaps-muelleri.jpg",
     name:{ ar:"الثعبان المرجاني الكاذب ثنائي اللون", he:"מחרוזן הטבעות", en:"Mueller's False Coral Snake" },
@@ -88,7 +88,7 @@ const unknownData = [
            en:"A tiny, very slender snake that spends most of its time below ground." },
     length:{ ar:"عادةً نحو 20–30 سم", he:"בדרך כלל כ־20–30 ס\"מ", en:"Usually ~20–30 cm" },
     diet:{ ar:"أساسًا النمل والنمل الأبيض والحشرات الصغيرة", he:"בעיקר נמלים, טרמיטים וחרקים קטנים", en:"Mainly ants, termites, and small insects" },
-    range:{ ar:"شمال إفريقيا وجنوب غرب آسيا؛ في إسرائيل: صحراء يهودا وغور الأردن والبحر الميت والنقب والعربة", he:"צפון אפריקה ודרום־מערב אסיה; בישראל במדבר יהודה, בקעת הירדן, ים המלח, הנגב והערבה", en:"North Africa and southwest Asia; in Israel: Judean Desert, Jordan Valley, Dead Sea, Negev, and Arava" } },
+    range:{ ar:"في إسرائيل: صحراء يهودا وغور الأردن والبحر الميت والنقب والعربة", he:"בישראל: מדבר יהודה, בקעת הירדן, ים המלח, הנגב והערבה", en:"In Israel: the Judean Desert, Jordan Valley, Dead Sea, Negev, and Arava" } },
 
   { latin:"Telescopus dhara", img:"images/unk-11-telescopus-dhara.jpg",
     name:{ ar:"ثعبان القط الأحمر", he:"עין־חתול אדמדם", en:"Tropical Cat Snake" },
@@ -97,7 +97,7 @@ const unknownData = [
            en:"A mildly (rear-fanged) venomous snake, active mainly at night." },
     length:{ ar:"حتى نحو 120 سم", he:"עד כ־120 ס\"מ", en:"Up to ~120 cm" },
     diet:{ ar:"أساسًا السحالي والوزغ وأحيانًا القوارض الصغيرة", he:"בעיקר לטאות, שממיות ולעיתים מכרסמים קטנים", en:"Mainly lizards, geckos, and occasionally small rodents" },
-    range:{ ar:"مناطق صحراوية في إسرائيل وسيناء وشمال شرق إفريقيا", he:"אזורים מדבריים בישראל, סיני וצפון־מזרח אפריקה", en:"Desert areas in Israel, Sinai, and northeast Africa" } },
+    range:{ ar:"مناطق صحراوية في جنوب إسرائيل", he:"אזורים מדבריים בדרום ישראל", en:"Desert areas in southern Israel" } },
 
   { latin:"Telescopus hoogstraali", img:"images/unk-12-telescopus-hoogstraali.jpg",
     name:{ ar:"ثعبان القط الرمادي", he:"עין־חתול אפור", en:"Grey Cat Snake" },
@@ -106,7 +106,7 @@ const unknownData = [
            en:"A mildly (rear-fanged) venomous and relatively rare snake, grey with a dark head." },
     length:{ ar:"حتى نحو 100 سم", he:"עד כ־100 ס\"מ", en:"Up to ~100 cm" },
     diet:{ ar:"أساسًا السحالي والقوارض الصغيرة", he:"בעיקר לטאות ומכרסמים קטנים", en:"Mainly lizards and small rodents" },
-    range:{ ar:"وسط وجنوب النقب وسيناء", he:"מרכז ודרום הנגב וסיני", en:"Central and southern Negev and Sinai" } },
+    range:{ ar:"وسط وجنوب النقب", he:"מרכז ודרום הנגב", en:"Central and southern Negev" } },
 
   { latin:"Rhynchocalamus melanocephalus", img:"images/unk-13-rhynchocalamus-melanocephalus.jpg",
     name:{ ar:"ثعبان أسود الرأس", he:"שחור־ראש", en:"Palestine Black-headed Snake" },
@@ -115,7 +115,7 @@ const unknownData = [
            en:"A small, non-venomous snake, easily recognized by its black head." },
     length:{ ar:"عادةً نحو 30–50 سم", he:"בדרך כלל כ־30–50 ס\"מ", en:"Usually ~30–50 cm" },
     diet:{ ar:"أساسًا مفصليات الأرجل والزواحف الصغيرة", he:"בעיקר פרוקי־רגליים וזוחלים קטנים", en:"Mainly arthropods and small reptiles" },
-    range:{ ar:"إسرائيل والأردن وسوريا ولبنان وسيناء وتركيا", he:"ישראל, ירדן, סוריה, לבנון, סיני וטורקיה", en:"Israel, Jordan, Syria, Lebanon, Sinai, and Turkey" } },
+    range:{ ar:"منتشر في أنحاء إسرائيل: من الجليل والحرمون شمالًا، مرورًا بصحراء يهودا وغور الأردن، وحتى النقب جنوبًا", he:"נפוץ ברחבי ישראל: מהגליל והחרמון בצפון, דרך מדבר יהודה ובקעת הירדן, ועד הנגב בדרום", en:"Found across Israel: from the Galilee and Hermon in the north, through the Judean Desert and Jordan Valley, to the Negev in the south" } },
 
   { latin:"Eirenis coronelloides", img:"images/unk-14-eirenis-coronelloides.jpg",
     name:{ ar:"الثعبان القزم المخطط", he:"שלוון אזורים", en:"Banded Dwarf Racer" },
@@ -124,7 +124,7 @@ const unknownData = [
            en:"A small, delicate snake with dark crossbands along its body." },
     length:{ ar:"حتى نحو 33–45 سم", he:"עד כ־33–45 ס\"מ", en:"Up to ~33–45 cm" },
     diet:{ ar:"العقارب والعناكب وسائر مفصليات الأرجل", he:"עקרבים, עכבישים ופרוקי־רגליים אחרים", en:"Scorpions, spiders, and other arthropods" },
-    range:{ ar:"صحراء يهودا ومنطقة البحر الميت والنقب؛ في إسرائيل ومصر", he:"מדבר יהודה, אזור ים המלח והנגב; בישראל ובמצרים", en:"Judean Desert, Dead Sea area, and the Negev; in Israel and Egypt" } },
+    range:{ ar:"صحراء يهودا ومنطقة البحر الميت والنقب", he:"מדבר יהודה, אזור ים המלח והנגב", en:"Judean Desert, Dead Sea area, and the Negev" } },
 
   { latin:"Eirenis rothii", img:"images/unk-15-eirenis-rothii.jpg",
     name:{ ar:"ثعبان روث القزم", he:"שלוון טלוא־ראש", en:"Roth's Dwarf Racer" },
@@ -133,7 +133,7 @@ const unknownData = [
            en:"A small, non-venomous snake with a dark head and a striking color pattern." },
     length:{ ar:"عادةً نحو 30–40 سم", he:"בדרך כלל כ־30–40 ס\"מ", en:"Usually ~30–40 cm" },
     diet:{ ar:"الحشرات والعناكب ومفصليات الأرجل الصغيرة", he:"חרקים, עכבישים ופרוקי־רגליים קטנים", en:"Insects, spiders, and small arthropods" },
-    range:{ ar:"إسرائيل والأردن وسوريا ومناطق مجاورة في الشرق الأوسط", he:"ישראל, ירדן, סוריה ואזורים סמוכים במזרח התיכון", en:"Israel, Jordan, Syria, and nearby Middle Eastern areas" } },
+    range:{ ar:"شمال إسرائيل ومنطقة صحراء يهودا والبحر الميت", he:"צפון ישראל ואזור מדבר יהודה וים המלח", en:"Northern Israel and the Judean Desert–Dead Sea area" } },
 
   { latin:"Eirenis lineomaculatus", img:"images/unk-16-eirenis-lineomaculatus.jpg",
     name:{ ar:"الثعبان القزم المرقّط", he:"שלוון כתמים", en:"Narrow-spotted Dwarf Racer" },
@@ -142,7 +142,7 @@ const unknownData = [
            en:"A small snake, usually brown or light grey, with dark spots on the back." },
     length:{ ar:"حتى نحو 40 سم، وغالبًا أقل", he:"עד כ־40 ס\"מ, לרוב פחות", en:"Up to ~40 cm, usually less" },
     diet:{ ar:"أساسًا العقارب ومفصليات الأرجل", he:"בעיקר עקרבים ופרוקי־רגליים", en:"Mainly scorpions and arthropods" },
-    range:{ ar:"شمال ووسط إسرائيل، وكذلك الأردن وسوريا ولبنان وتركيا", he:"צפון ומרכז ישראל, וכן ירדן, סוריה, לבנון וטורקיה", en:"Northern and central Israel, plus Jordan, Syria, Lebanon, and Turkey" } },
+    range:{ ar:"شمال ووسط إسرائيل", he:"צפון ומרכז ישראל", en:"Northern and central Israel" } },
 
   { latin:"Eirenis decemlineatus", img:"images/unk-17-eirenis-decemlineatus.jpg",
     name:{ ar:"أفعى قزمة بخطوط رفيعة", he:"שלוון קווים", en:"Narrow-striped Dwarf Snake" },
@@ -151,7 +151,7 @@ const unknownData = [
            en:"A small, non-venomous snake with a yellowish-brown body and dark lines along it." },
     length:{ ar:"حتى نحو 40–45 سم؛ ذكرت مصادر قديمة حتى نحو 85 سم", he:"עד כ־40–45 ס\"מ; מקורות ישנים ציינו עד כ־85 ס\"מ", en:"Up to ~40–45 cm; older sources cited up to ~85 cm" },
     diet:{ ar:"الحشرات والعناكب والسحالي الصغيرة", he:"חרקים, עכבישים ולטאות קטנות", en:"Insects, spiders, and small lizards" },
-    range:{ ar:"شمال ووسط إسرائيل، وكذلك الأردن وسوريا والعراق وتركيا", he:"צפון ומרכז ישראל, וכן ירדן, סוריה, עיראק וטורקיה", en:"Northern and central Israel, plus Jordan, Syria, Iraq, and Turkey" } },
+    range:{ ar:"شمال ووسط إسرائيل", he:"צפון ומרכז ישראל", en:"Northern and central Israel" } },
 
   { latin:"Eirenis levantinus", img:"images/unk-18-eirenis-levantinus.jpg",
     name:{ ar:"الثعبان القزم ذو الطوق", he:"שלוון קולר", en:"Ring-headed Dwarf Snake" },
@@ -160,7 +160,7 @@ const unknownData = [
            en:"In Israel it is associated mainly with the Hermon area and the north of the country." },
     length:{ ar:"حتى نحو 70 سم", he:"עד כ־70 ס\"מ", en:"Up to ~70 cm" },
     diet:{ ar:"أساسًا الحشرات ومفصليات الأرجل", he:"בעיקר חרקים ופרוקי־רגליים", en:"Mainly insects and arthropods" },
-    range:{ ar:"الحرمون وشمال إسرائيل؛ ويُعرف النوع أيضًا من لبنان وسوريا وتركيا", he:"החרמון וצפון ישראל; המין מוכר גם מלבנון, סוריה וטורקיה", en:"Hermon and northern Israel; the species is also known from Lebanon, Syria, and Turkey" } },
+    range:{ ar:"الحرمون وشمال إسرائيل", he:"החרמון וצפון ישראל", en:"Hermon and northern Israel" } },
 
   { latin:"Rhagerhis moilensis", img:"images/unk-19-rhagerhis-moilensis.jpg",
     name:{ ar:"الحنش الصحراوي المضلّع (الكوبرا الكاذبة)", he:"תלום־קשקשים מדברי", en:"Moila Snake (False Cobra)" },
@@ -169,5 +169,5 @@ const unknownData = [
            en:"When threatened, it flattens its neck and somewhat mimics cobra behavior. (Rear-fanged, mildly venomous.)" },
     length:{ ar:"حتى نحو 102 سم", he:"עד כ־102 ס\"מ", en:"Up to ~102 cm" },
     diet:{ ar:"السحالي والثعابين والطيور والقوارض", he:"לטאות, נחשים, ציפורים ומכרסמים", en:"Lizards, snakes, birds, and rodents" },
-    range:{ ar:"العربة وجنوب النقب في إسرائيل، وعموم شمال إفريقيا والشرق الأوسط", he:"הערבה והנגב הדרומי בישראל, וכן ברחבי צפון אפריקה והמזרח התיכון", en:"The Arava and southern Negev in Israel, and across North Africa and the Middle East" } }
+    range:{ ar:"العربة وجنوب النقب في إسرائيل", he:"הערבה והנגב הדרומי בישראל", en:"The Arava and southern Negev in Israel" } }
 ];
