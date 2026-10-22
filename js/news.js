@@ -21,13 +21,13 @@ const newsData = [
              en: "At their summer peak, snakes are seen more in the evening and at night near homes and gardens, seeking food and shelter — not people. All snakes in Israel are protected by law. Keep people and pets away and contact a licensed snake hunter instead of trying to handle or kill them, alongside simple preventive measures around the home." }
   },
   {
-    date: "2026-07-26", scope: "global", icon: "news",
-    title: { ar: "أبحاث حديثة تكشف التركيب الكيميائي المعقّد لسموم الأفاعي",
-             he: "מחקרים עדכניים חושפים את ההרכב הכימי של ארס הנחשים",
-             en: "New research reveals the complex makeup of snake venom" },
-    body:  { ar: "كشفت تقنيات التحليل الجزيئي المتقدّمة (بروتيوميكس وجينوميكس) أن سمّ الأفعى ليس مادة بسيطة، بل خليط معقّد من مئات البروتينات والإنزيمات يختلف بين الأنواع، بل بين أفراد النوع الواحد حسب الموطن والغذاء. وقد ساعد علم السموم (Venomics) ومطيافية الكتلة على رسم مكوّناته واكتشاف سموم جديدة، بما يفتح آفاقًا لأدوية لأمراض القلب والتخثّر والالتهاب وحتى السرطان. كما رُصد عام 2026 تسلسل جينوم أفعى مقاومة طبيعيًا للسمّ، ما قد يقود إلى أمصال أفضل مستقبلًا.",
-             he: "טכנולוגיות ניתוח מולקולרי מתקדמות (פרוטאומיקה וגנומיקה) חשפו שארס הנחש אינו חומר פשוט אלא תערובת מורכבת של מאות חלבונים ואנזימים, המשתנה בין מינים ואף בין פרטים לפי אזור ותזונה. חקר הארסים (Venomics) וספקטרומטריית מסות סייעו למפות את מרכיביו ולזהות רעלנים חדשים, ולפתוח פתח לתרופות למחלות לב, קרישה, דלקת ואף סרטן. ב־2026 רוצף גנום של נחש עמיד לארס באופן טבעי, ממצא שעשוי להוביל לנסיובים טובים יותר.",
-             en: "Advanced molecular analysis (proteomics and genomics) has revealed that snake venom is not a simple substance but a complex mix of hundreds of proteins and enzymes that varies between species and even individuals by region and diet. 'Venomics' and mass spectrometry have mapped its components and uncovered new toxins, opening avenues for drugs targeting heart disease, clotting, inflammation, and even cancer. In 2026, the genome of a venom-resistant snake was sequenced — a finding that may lead to better antivenoms." }
+    date: "2026-07-30", scope: "global", icon: "news",
+    title: { ar: "جهود دولية لتطوير أمصال أكثر أمانًا وفعالية ضد سمّ الأفاعي",
+             he: "פיתוח נסיובים בטוחים ויעילים יותר נגד ארס נחשים",
+             en: "Global push for safer, more effective snake antivenoms" },
+    body:  { ar: "تُعدّ لدغات الأفاعي تحديًا صحيًا يصيب مئات الآلاف سنويًا، ويبقى المصل المضاد العلاج الأساسي لها. تعمل مراكز بحثية حول العالم على جيلٍ جديد من الأمصال أكثر أمانًا وفعالية عبر البيولوجيا الجزيئية والهندسة الوراثية وأجسام مضادة شبه بشرية، إضافة إلى «علم السموم» (Venomics) لتطوير أمصال موجّهة، وأمصال واسعة الطيف تغطّي عدة أنواع في المنطقة الواحدة. ومع ذلك تبقى الوقاية والتشخيص السريع والوصول المبكر للعلاج عوامل حاسمة لإنقاذ الحياة.",
+             he: "הכשות נחשים ארסיים פוגעות במאות אלפי בני אדם מדי שנה, והנסיוב נותר הטיפול העיקרי. מרכזי מחקר בעולם מפתחים דור חדש של נסיובים בטוחים ויעילים יותר בעזרת ביולוגיה מולקולרית, הנדסה גנטית ונוגדנים דמויי-אנוש, לצד חקר הארסים (Venomics) לפיתוח נסיובים ממוקדים ונסיובים רחבי-טווח לכמה מינים באותו אזור. עם זאת, מניעה, זיהוי מהיר והגעה מוקדמת לטיפול נותרים מכריעים להצלת חיים.",
+             en: "Venomous snakebites affect hundreds of thousands of people each year, and antivenom remains the main treatment. Research centers worldwide are developing a new generation of safer, more effective antivenoms using molecular biology, genetic engineering, and human-like antibodies, alongside 'venomics' for targeted products and broad-spectrum antivenoms covering several regional species. Even so, prevention, rapid recognition, and early access to care remain decisive for saving lives." }
   },
   {
     date: "2026-07-27", scope: "local", icon: "event",
@@ -39,13 +39,13 @@ const newsData = [
              en: "Israel spans diverse habitats — from the Hermon and Galilee in the north to the Judean Desert and Negev in the south — each with its own snake and reptile species. Systematic documentation (photos, location, date, habitat, and behavior) helps map distribution, track population changes, and detect human and climate impacts. It supports research and the protection of habitats and protected species, and helps the public with correct identification and reptiles' role in ecological balance." }
   },
   {
-    date: "2026-07-30", scope: "global", icon: "news",
-    title: { ar: "جهود دولية لتطوير أمصال أكثر أمانًا وفعالية ضد سمّ الأفاعي",
-             he: "פיתוח נסיובים בטוחים ויעילים יותר נגד ארס נחשים",
-             en: "Global push for safer, more effective snake antivenoms" },
-    body:  { ar: "تُعدّ لدغات الأفاعي تحديًا صحيًا يصيب مئات الآلاف سنويًا، ويبقى المصل المضاد العلاج الأساسي لها. تعمل مراكز بحثية حول العالم على جيلٍ جديد من الأمصال أكثر أمانًا وفعالية عبر البيولوجيا الجزيئية والهندسة الوراثية وأجسام مضادة شبه بشرية، إضافة إلى «علم السموم» (Venomics) لتطوير أمصال موجّهة، وأمصال واسعة الطيف تغطّي عدة أنواع في المنطقة الواحدة. ومع ذلك تبقى الوقاية والتشخيص السريع والوصول المبكر للعلاج عوامل حاسمة لإنقاذ الحياة.",
-             he: "הכשות נחשים ארסיים פוגעות במאות אלפי בני אדם מדי שנה, והנסיוב נותר הטיפול העיקרי. מרכזי מחקר בעולם מפתחים דור חדש של נסיובים בטוחים ויעילים יותר בעזרת ביולוגיה מולקולרית, הנדסה גנטית ונוגדנים דמויי-אנוש, לצד חקר הארסים (Venomics) לפיתוח נסיובים ממוקדים ונסיובים רחבי-טווח לכמה מינים באותו אזור. עם זאת, מניעה, זיהוי מהיר והגעה מוקדמת לטיפול נותרים מכריעים להצלת חיים.",
-             en: "Venomous snakebites affect hundreds of thousands of people each year, and antivenom remains the main treatment. Research centers worldwide are developing a new generation of safer, more effective antivenoms using molecular biology, genetic engineering, and human-like antibodies, alongside 'venomics' for targeted products and broad-spectrum antivenoms covering several regional species. Even so, prevention, rapid recognition, and early access to care remain decisive for saving lives." }
+    date: "2026-07-26", scope: "global", icon: "news",
+    title: { ar: "أبحاث حديثة تكشف التركيب الكيميائي المعقّد لسموم الأفاعي",
+             he: "מחקרים עדכניים חושפים את ההרכב הכימי של ארס הנחשים",
+             en: "New research reveals the complex makeup of snake venom" },
+    body:  { ar: "كشفت تقنيات التحليل الجزيئي المتقدّمة (بروتيوميكس وجينوميكس) أن سمّ الأفعى ليس مادة بسيطة، بل خليط معقّد من مئات البروتينات والإنزيمات يختلف بين الأنواع، بل بين أفراد النوع الواحد حسب الموطن والغذاء. وقد ساعد علم السموم (Venomics) ومطيافية الكتلة على رسم مكوّناته واكتشاف سموم جديدة، بما يفتح آفاقًا لأدوية لأمراض القلب والتخثّر والالتهاب وحتى السرطان. كما رُصد عام 2026 تسلسل جينوم أفعى مقاومة طبيعيًا للسمّ، ما قد يقود إلى أمصال أفضل مستقبلًا.",
+             he: "טכנולוגיות ניתוח מולקולרי מתקדמות (פרוטאומיקה וגנומיקה) חשפו שארס הנחש אינו חומר פשוט אלא תערובת מורכבת של מאות חלבונים ואנזימים, המשתנה בין מינים ואף בין פרטים לפי אזור ותזונה. חקר הארסים (Venomics) וספקטרומטריית מסות סייעו למפות את מרכיביו ולזהות רעלנים חדשים, ולפתוח פתח לתרופות למחלות לב, קרישה, דלקת ואף סרטן. ב־2026 רוצף גנום של נחש עמיד לארס באופן טבעי, ממצא שעשוי להוביל לנסיובים טובים יותר.",
+             en: "Advanced molecular analysis (proteomics and genomics) has revealed that snake venom is not a simple substance but a complex mix of hundreds of proteins and enzymes that varies between species and even individuals by region and diet. 'Venomics' and mass spectrometry have mapped its components and uncovered new toxins, opening avenues for drugs targeting heart disease, clotting, inflammation, and even cancer. In 2026, the genome of a venom-resistant snake was sequenced — a finding that may lead to better antivenoms." }
   },
   {
     date: "2026-07-24", scope: "local", icon: "new",
