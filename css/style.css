@@ -1301,3 +1301,20 @@ html[dir="rtl"] .fa-steps li, html[dir="rtl"] .fa-donts li{ padding:12px 52px 12
 .fa-steps{ counter-reset:st; }
 .fa-steps li::before{ counter-increment:st; content:counter(st); position:absolute; inset-inline-start:14px; top:12px; width:26px; height:26px; background:var(--ember); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.85rem; }
 .fa-donts li::before{ content:"✕"; position:absolute; inset-inline-start:16px; top:12px; color:#C62828; font-weight:900; font-size:1.1rem; }
+
+/* ===== أرقام التواصل في الصفحة الرئيسية — زرّان بإطار على سطر واحد ===== */
+.lead-contact-ways{ container-type:inline-size; display:flex; flex-wrap:nowrap; align-items:center; gap:0 1.6cqi; margin-top:14px; white-space:nowrap; }
+.contact-way{ display:inline-flex; align-items:center; gap:.35em; padding:.5em .85em; border-radius:999px; text-decoration:none; font-weight:600; color:#140d05; white-space:nowrap; background:rgba(255,250,240,.88); border:1.5px solid var(--line); box-shadow:0 2px 8px rgba(0,0,0,.08); transition:transform .15s ease, box-shadow .15s ease; font-size:min(1.05rem, 2.3cqi); }
+html[lang="he"] .contact-way{ font-size:min(1.05rem, 2.5cqi); }
+html[lang="ar"] .contact-way{ font-size:min(1.05rem, 2.42cqi); }
+.contact-way:hover{ transform:translateY(-1px); box-shadow:0 4px 12px rgba(0,0,0,.14); }
+.contact-wa{ border-color:#25D366; }
+.contact-call{ border-color:var(--ember); }
+.contact-call .contact-num{ color:var(--ember-deep); }
+.contact-way svg{ width:1.3em; height:1.3em; flex:none; }
+.contact-num{ font-size:1.14em; font-weight:900; letter-spacing:.02em; color:#140d05; }
+@media(max-width:600px){
+  .lead-contact-ways{ container-type:normal; contain:inline-size; white-space:normal; flex-direction:column; align-items:flex-start; gap:10px; }
+  .contact-way, html[lang="he"] .contact-way, html[lang="ar"] .contact-way{ font-size:min(1rem, 4vw); flex-wrap:wrap; white-space:normal; row-gap:2px; border-radius:18px; }
+  .contact-num{ white-space:nowrap; }
+}
